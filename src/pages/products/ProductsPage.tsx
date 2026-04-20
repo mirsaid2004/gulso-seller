@@ -9,9 +9,9 @@ import {
     Trash2,
     ChevronLeft,
     ChevronRight,
-    Filter
+    // Filter
 } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar"
+// import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar"
 import { Badge } from "@/shared/ui/badge"
 
 const products = [

@@ -9,11 +9,11 @@ import {
     Clock,
     Play,
     CheckCircle2,
-    XCircle,
-    SearchIcon,
+    // XCircle,
+    // SearchIcon,
     SlidersHorizontal,
     Download,
-    ClipboardList,
+    // ClipboardList,
     Wand2,
     Truck
 } from "lucide-react"

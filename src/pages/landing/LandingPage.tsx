@@ -1,6 +1,10 @@
 import { Button } from "@/shared/ui/button"
 import { Badge } from "@/shared/ui/badge"
-import { ShoppingBag, ArrowRight, Truck, BarChart3, Users, Zap, Globe, Share2, MessageSquare } from "lucide-react"
+import {
+    ShoppingBag,
+    // ArrowRight,
+    Truck, BarChart3, Users, Zap, Globe, Share2, MessageSquare
+} from "lucide-react"
 import { motion } from "framer-motion"
 import heroLaptop from "@/assets/images/hero-laptop.png"
 import workingScene from "@/assets/images/working-scene.png"
@@ -98,7 +102,7 @@ export default function LandingPage() {
                 <section id="imkoniyatlar" className="py-20 bg-white px-6">
                     <div className="container mx-auto">
                         <motion.div
-                            {...fadeIn}
+                            {...fadeIn as any}
                             className="text-center space-y-3 mb-16"
                         >
                             <span className="text-primary text-[9px] uppercase tracking-[0.5em] font-black italic">Nima uchun Gulso Seller?</span>
@@ -238,7 +242,7 @@ export default function LandingPage() {
                 <section className="py-24 px-6">
                     <div className="container mx-auto max-w-4xl">
                         <motion.div
-                            {...fadeIn}
+                            {...fadeIn as any}
                             className="relative rounded-[2.5rem] bg-[#14141A] p-12 lg:py-16 overflow-hidden text-center"
                         >
                             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(242,102,34,0.1),transparent_50%)]" />
