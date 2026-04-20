@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e7236a",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211117",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Remove arrows from number input */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between border-b border-primary/10 px-6 py-4 md:px-40">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-8" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Gulso 1.0</h2>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex items-center justify-center p-6">
+<div class="max-w-[440px] w-full flex flex-col items-center text-center space-y-8">
+<!-- Heading & Info -->
+<div class="space-y-3">
+<h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">Tasdiqlash</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                        Tasdiqlash kodi <span class="font-semibold text-slate-900 dark:text-slate-100">+998 ** *** ** 00</span> raqamiga yuborildi
+                    </p>
+</div>
+<!-- OTP Inputs -->
+<div class="w-full">
+<fieldset class="flex justify-center gap-3 md:gap-4">
+<input autofocus="" class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+<input class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+<input class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+<input class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+<input class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+<input class="w-12 h-14 md:w-14 md:h-16 text-center text-2xl font-bold rounded-xl border-2 border-primary/20 focus:border-primary focus:ring-0 bg-white dark:bg-slate-800 transition-all" maxlength="1" type="number"/>
+</fieldset>
+</div>
+<!-- Timer & Resend -->
+<div class="flex flex-col items-center gap-4 w-full">
+<div class="flex items-center gap-2 bg-primary/5 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<p class="text-primary font-bold text-sm">00:59</p>
+</div>
+<button class="text-slate-500 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors disabled:opacity-50" disabled="">
+                        Kodni qayta yuborish
+                    </button>
+</div>
+<!-- Action Button -->
+<div class="w-full pt-4">
+<button class="w-full py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+                        Tasdiqlash
+                    </button>
+</div>
+<!-- Footer Support -->
+<p class="text-slate-400 dark:text-slate-500 text-xs">
+                    Kod kelmadimi? <a class="text-primary hover:underline" href="#">Yordam markazi</a> bilan bog'laning
+                </p>
+</div>
+</main>
+<!-- Image Decoration Bottom -->
+<div class="fixed bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/10 via-primary to-primary/10 opacity-30"></div>
+</div>
+</body></html>

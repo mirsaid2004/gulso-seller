@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e7236a",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211117",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-40 bg-white dark:bg-background-dark/50 sticky top-0 z-50 backdrop-blur-md">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary text-2xl">local_florist</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Gulso 1.0</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 lg:gap-8">
+<div class="flex gap-2">
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile placeholder showing a smiling man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYXTt55r_Q8szStxNC5Lipa7keIX1kUzdtg8btB-2RubRTK_jU1VCckOMvlKKl5ctF4DQYjG0ti59pvxY8N3Sj05wD3BGFxqbuPY7EdnrfdJ4khOe_FLAUEe5rYvMRjUNnk_I0egHbF7h2i4bttt8KrtE56GDaE31NfRko_H1ZO-fvLMFKd6pPJ9qd1vIr2vTX57CeNWLAs6W91g9R42bfsY24bOBCik4CdLx7fr9C2NKdrRX2Q4fe4bzbBUjt0IM0vIKHme3REf8w");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 lg:px-10 gap-8">
+<div class="flex flex-col @container gap-6">
+<div class="flex w-full flex-col gap-6 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex gap-6 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24 border-4 border-primary/10" data-alt="Detailed user avatar profile photo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_z4-FejKSD2SWHZA4x_1-Xb2r7vbosJIU6n_9zDui5qWJkKAqbnJBGFL1M21qjpiQoNfvDSkcwzt-JnugsUKa_2usEzfYVIvBh4clBtlS8hbPlmcrmZXitoRSJVAsfFR0PWjiWi0PPmqIw43M0iE8m4mHoMjd-WaCke5cfyQzozcn2a1vQBahF-7hIV_8tkTis6i3Emw39cupkvwtohx1u31wwiwHwvdP_9eHjxFxqtyB0fW83X5-PVLlKfhPPHP24jRKXoKdvjyD");'></div>
+<div class="flex flex-col">
+<h1 class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Aziz Rahimjonov</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                                        +998 90 123 45 67
+                                    </p>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-11 px-6 bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-all w-full @[480px]:w-auto">
+<span class="material-symbols-outlined text-xl">edit</span>
+<span class="truncate">Tahrirlash</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<aside class="lg:col-span-3 flex flex-col gap-2">
+<div class="p-2 bg-white dark:bg-slate-800/30 rounded-xl border border-primary/5">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary text-white shadow-md shadow-primary/20" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-medium">Profil</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-primary/5 transition-colors mt-1" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-medium">Saralanganlar</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-primary/5 transition-colors mt-1" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-medium">Buyurtmalar</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-primary/5 transition-colors mt-1" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-medium">Manzillar</span>
+</a>
+<hr class="my-2 border-primary/10"/>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-red-500 hover:bg-red-50 transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-medium">Chiqish</span>
+</a>
+</div>
+<div class="mt-4 p-5 rounded-xl border-2 border-dashed border-primary/30 bg-primary/5 flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold">Sotuvchi bo'lish</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">O'z gullaringizni bizning platformada soting</p>
+</div>
+<button class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-semibold hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-lg">storefront</span>
+<span class="truncate">Sotuvchi rejimiga o'tish</span>
+</button>
+</div>
+</aside>
+<div class="lg:col-span-9 flex flex-col gap-8">
+<section>
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+                                        Buyurtmalar tarixi
+                                    </h2>
+<a class="text-primary text-sm font-medium hover:underline" href="#">Hammasini ko'rish</a>
+</div>
+<div class="flex flex-col gap-3">
+<div class="bg-white dark:bg-slate-800/50 p-4 rounded-xl border border-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex gap-4 items-center">
+<div class="size-16 rounded-lg bg-center bg-cover border border-primary/10" data-alt="Bouquet of pink roses and white lilies" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_uUZDgMZS1UscbbRxg1sK0AGdMpQj2UY-HjAXfl8TzRFsRnSUdkiLueieX9x1bHQBvFHXtOleRx6I9RffTKpShvfcxHOKHMRMse-RzfTt7lEYz9MpriOOg93Hahgfp2STOO9obdsfgZd41d-As5vkOFNTL2MSbL1hlxsKk0bJxySeEfkdRBZNJ1GBXHB_Rg45l43h5GutqI_yQZp3bg_C2PlAjuUPbTR5fUSdpFjTRuL49ecc_pZk0gvo9LcQF9lMM1p6H8ChitNY');"></div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Pushti atirgullar guldastasi</p>
+<p class="text-sm text-slate-500">№24891 • 12 May, 2024</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                                                Kuryerga berildi
+                                            </span>
+<p class="font-bold text-primary">250,000 so'm</p>
+<button class="material-symbols-outlined text-slate-400 hover:text-primary transition-colors">chevron_right</button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-4 rounded-xl border border-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4 opacity-80">
+<div class="flex gap-4 items-center">
+<div class="size-16 rounded-lg bg-center bg-cover border border-primary/10" data-alt="Yellow tulips in a ceramic vase" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGbFw2D-iGVr0uzcPWtJKPXd1j3dRQu2GgoETHpajTmN6OVvwl7CYFeDuhlVEkTVtvq4xZfvsqhIzbQNI4kNwb3JjxOzbP_AB0yZqlIjHdgueE3qbeqbNIVL77iuFcAqcU1j9jRqpyNOQDhNlP5zy8qEgyBSXN8nxmG0xXJFu-pObnEVgpBbzPhPwxptWLIQfWMv_NSjbe9JtMQuQGlZ8sWOxvfDUe60hY8CDeYQAz2rSUBPZQRRjaxqcQRorBT7Iw7AONS0uZ6dwj');"></div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Sariq lola (Premium)</p>
+<p class="text-sm text-slate-500">№24512 • 05 May, 2024</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                                                Yetkazib berildi
+                                            </span>
+<p class="font-bold text-slate-900 dark:text-slate-100">180,000 so'm</p>
+<button class="material-symbols-outlined text-slate-400 hover:text-primary transition-colors">chevron_right</button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-4 rounded-xl border border-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex gap-4 items-center">
+<div class="size-16 rounded-lg bg-center bg-cover border border-primary/10" data-alt="Orchid plant in a stylish pot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYoPHpk62Oj91AG2q66FUEde-We7BjGlv3XlNQ5EFH0UyEV9ekdhvMIXQa9BI5nU2ejP_3osBN1jatCsb0y5YKC9-4oU1SZemVKtLhus4zuI5-aaQHbJafBPL5R_aPslRKP1rrWAURxHQRl0WC9j-LTELRNIlKRQ4RAjaLG69kCjUTzAmnrOuQhUy2XS7HpxyTRAig750NZUHXeqUFPi81nVIzcNktqcOH4Pw66zPXUnS2Ga9HyNShDXQk_ifo3Y-z43FWTU0V8SME');"></div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Oq Orxideya</p>
+<p class="text-sm text-slate-500">№24995 • 20 May, 2024</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-yellow-100 text-yellow-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span>
+                                                Tayyorlanmoqda
+                                            </span>
+<p class="font-bold text-primary">420,000 so'm</p>
+<button class="material-symbols-outlined text-slate-400 hover:text-primary transition-colors">chevron_right</button>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">favorite</span>
+                                        Saralanganlar
+                                    </h2>
+<a class="text-primary text-sm font-medium hover:underline" href="#">Barchasini ko'rish</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden border border-primary/5 group">
+<div class="relative h-40">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-300 group-hover:scale-110" data-alt="Close up of a red rose bouquet" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB62QMuVtbDm49fs3Mbf_tYN0o3DxZ_77wcjZHDHBV_7uNXTr6ztlNx3wxy2Z6stG2lvpDEi6AEJsTleBVHH7NNHnX-GwffqqzmJw45lVSoGScbvac00N0KpPd-zW3FzmO_rpkcuJsosm845i-EdA-8qVEjTtOTxLJr-3EOBXUu4prNorZPnz-VQKilMZpXQDAsxNM2wGo0HcrEi3Gh3h3TclbGHsJVDXk2Yuxu8JjdHGaLN_VPYbwwsAPg25bFX_vY6T-G_OfMSZTh');"></div>
+<button class="absolute top-2 right-2 size-8 flex items-center justify-center rounded-full bg-white/80 text-primary backdrop-blur">
+<span class="material-symbols-outlined text-xl fill-1">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<p class="text-sm font-bold truncate text-slate-900 dark:text-slate-100">Qizil atirgullar</p>
+<p class="text-primary font-bold">120,000 so'm</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden border border-primary/5 group">
+<div class="relative h-40">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-300 group-hover:scale-110" data-alt="Colorful mix of spring flowers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8Qrq05XeKUc5bctAUw7O1BVZ5WD7Qj7hnVcmvUW3E3YHoKPKBugW1YUoeiwANNT_L4KRCpN-K09WiAPmPzYxGYiKtRqiQxO--ZIGVZA0kbVOMqbWzbaI-tzLmdytnUBnfysxmW7S0471veWiFc_iEwhkzKn7lMC3cq2elI5uEmM0M1Qd75fRK6xgFiSxovOJOv2_p_Q5duc_xegEC7283qHJi-LKW2w6LteNCdvcqJCYPqLtfGYeRoOK1IvhytcSb--w4vkwrVgbi');"></div>
+<button class="absolute top-2 right-2 size-8 flex items-center justify-center rounded-full bg-white/80 text-primary backdrop-blur">
+<span class="material-symbols-outlined text-xl fill-1">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<p class="text-sm font-bold truncate text-slate-900 dark:text-slate-100">Bahoriy guldasta</p>
+<p class="text-primary font-bold">95,000 so'm</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden border border-primary/5 group hidden sm:block">
+<div class="relative h-40">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-300 group-hover:scale-110" data-alt="Beautiful white lilies bouquet" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdTwM6cUZ-BYF5oZPHg6ZO_KweNOklLEGlkHtkO1CTN2jSPJHszPpqzZ-MQ0PUl1HvP496dosd-NM_-CiKtlkr4EVpeQhSNch8f_b_-qF7mzGeIJdXPLNlrpIT5ZhwhcCn3jEjOa8ALafWTcwCMCorMpMjEPIK6Q7EpPATsYvGDs0U5XUZ9v_93opd0n6DYCOA9wtuArGcgUOxoNi_qjAR02JLU4uThsppHzq1JdkQcJgUF_h0EzOR1drELJMwMWGKgjTXprJT5f76');"></div>
+<button class="absolute top-2 right-2 size-8 flex items-center justify-center rounded-full bg-white/80 text-primary backdrop-blur">
+<span class="material-symbols-outlined text-xl fill-1">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<p class="text-sm font-bold truncate text-slate-900 dark:text-slate-100">Oq Nilufarlar</p>
+<p class="text-primary font-bold">145,000 so'm</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">badge</span>
+                                    Shaxsiy ma'lumotlar
+                                </h2>
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-primary/5 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Ism va Familiya</label>
+<div class="px-4 py-3 rounded-lg bg-background-light dark:bg-slate-900/50 border border-primary/10 text-slate-900 dark:text-slate-100 font-medium">
+                                            Aziz Rahimjonov
+                                        </div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Telefon raqam</label>
+<div class="px-4 py-3 rounded-lg bg-background-light dark:bg-slate-900/50 border border-primary/10 text-slate-900 dark:text-slate-100 font-medium">
+                                            +998 90 123 45 67
+                                        </div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Elektron pochta</label>
+<div class="px-4 py-3 rounded-lg bg-background-light dark:bg-slate-900/50 border border-primary/10 text-slate-900 dark:text-slate-100 font-medium">
+                                            aziz.rahimjonov@example.com
+                                        </div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Tug'ilgan kun</label>
+<div class="px-4 py-3 rounded-lg bg-background-light dark:bg-slate-900/50 border border-primary/10 text-slate-900 dark:text-slate-100 font-medium">
+                                            15 Iyun, 1995
+                                        </div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-4">Buyurtma holatlari tushuntirishi</h2>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 text-gray-600 border border-gray-200">Qabul qilindi</span>
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-yellow-100 text-yellow-600 border border-yellow-200">Tayyorlanmoqda</span>
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-100 text-blue-600 border border-blue-200">Kuryerga berildi</span>
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-purple-100 text-purple-600 border border-purple-200">Yetkazilmoqda</span>
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-green-100 text-green-600 border border-green-200">Yetkazib berildi</span>
+<span class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-red-100 text-red-600 border border-red-200">Bekor qilindi</span>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-background-dark/80 border-t border-primary/10 py-8 lg:px-40 px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">local_florist</span>
+<span class="font-bold text-lg text-slate-900 dark:text-slate-100">Gulso</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Biz haqimizda</a>
+<a class="hover:text-primary transition-colors" href="#">Yordam markazi</a>
+<a class="hover:text-primary transition-colors" href="#">Maxfiylik siyosati</a>
+</div>
+<p class="text-sm text-slate-400">© 2024 Gulso 1.0. Barcha huquqlar himoyalangan.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

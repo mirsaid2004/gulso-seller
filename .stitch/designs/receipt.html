@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e7236a",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211117",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-40">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">local_florist</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em]">Gulso 1.0</h2>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary transition-colors hover:bg-primary/20">
+<span class="material-symbols-outlined">close</span>
+</button>
+</header>
+<main class="flex-1 flex justify-center py-8 px-4">
+<div class="layout-content-container flex flex-col max-w-[600px] flex-1">
+<div class="flex flex-col items-center text-center mb-8">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-5xl text-primary">check_circle</span>
+</div>
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight">Buyurtma qabul qilindi!</h1>
+<p class="text-primary font-semibold mt-2">Buyurtma raqami: #GS-88421</p>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-primary/5 p-6 mb-6">
+<h3 class="text-lg font-bold mb-4 border-b border-primary/5 pb-2">To'lov tafsilotlari</h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-slate-500 dark:text-slate-400">Mahsulotlar narxi</span>
+<span class="font-medium">450,000 so'm</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-500 dark:text-slate-400">Yetkazib berish</span>
+<span class="font-medium">25,000 so'm</span>
+</div>
+<div class="flex justify-between items-center pt-3 border-t border-primary/5">
+<span class="text-lg font-bold">Jami summa</span>
+<span class="text-lg font-bold text-primary">475,000 so'm</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-primary/5 p-6 mb-6">
+<h3 class="text-lg font-bold mb-4 border-b border-primary/5 pb-2">Yetkazib berish ma'lumotlari</h3>
+<div class="space-y-4">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Manzil</p>
+<p class="font-medium">Toshkent sh., Mirzo Ulug'bek tumani, Mustaqillik shoh ko'chasi, 12-uy</p>
+</div>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Vaqt</p>
+<p class="font-medium">Bugun, 18:00 - 20:00 oralig'ida</p>
+</div>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">payments</span>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400">To'lov usuli</p>
+<p class="font-medium">Naqd pul bilan (Qabul qilganda)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<button class="flex w-full items-center justify-center gap-2 rounded-xl h-12 bg-primary text-white font-bold transition-transform active:scale-95">
+<span class="material-symbols-outlined">download</span>
+                            Chekni yuklab olish
+                        </button>
+<button class="flex w-full items-center justify-center gap-2 rounded-xl h-12 bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">home</span>
+                            Asosiy sahifaga qaytish
+                        </button>
+</div>
+<div class="mt-8">
+<div class="w-full h-48 rounded-xl overflow-hidden grayscale opacity-80" data-location="Tashkent, Uzbekistan" style="">
+<div class="w-full h-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center relative">
+<img alt="Map Location" class="w-full h-full object-cover" data-alt="Stylized map showing delivery location in Tashkent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKHM_QCt-LVUgOEx2QGnsufsWXGrQmqrAWngolvkndag2rxHU6xU_Bpkfl0ww4yAhcIz2gsurUFxBd41ztQuxQTDPuAEpKgquf_t0bdyWFWxV9qOnP-1HOv13SKe-U2c1Q8sL-HAnd_-AjOCcM3Z5LTJ4m2iUEe4MArJRnBa9QwAd4QMMZsG753vD3Qvo0FvGtM2HKwJ2j2EjDzjvtak3jYSwomFF9P6klsKMldgBP735KdNOeRRYDFMiHoFVCu72NbmfMCjCZxY8V"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+</div>
+</div>
+</div>
+<p class="text-center text-sm text-slate-400 dark:text-slate-500 mt-4 italic">Kuryerimiz buyurtmani tayyorlagach siz bilan bog'lanadi.</p>
+</div>
+</div>
+</main>
+<footer class="py-6 text-center text-slate-400 dark:text-slate-600 text-sm">
+                © 2024 Gulso 1.0. Barcha huquqlar himoyalangan.
+            </footer>
+</div>
+</div>
+</body></html>

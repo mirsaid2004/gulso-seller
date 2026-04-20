@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e7236a",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211117",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Gulso 1.0 - Qizil atirgullar to'plami</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">local_florist</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-extrabold tracking-tight">Gulso <span class="text-primary text-sm align-top">1.0</span></h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center max-w-xl px-10">
+<div class="flex w-full items-stretch rounded-full bg-primary/5 dark:bg-primary/10 border border-primary/10 h-10 px-4">
+<div class="text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-primary/50" placeholder="Gullarni qidirish..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full size-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex items-center justify-center rounded-full size-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white dark:border-background-dark">2</span>
+</button>
+<div class="bg-primary/20 rounded-full size-10 overflow-hidden border border-primary/20">
+<img alt="Foydalanuvchi profil rasmi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHU99HgGQwmoKwSCFSU2s6GxB39fa8mSCGWZytY9OytqQAdL8M5m6eLHnzry3kC3v5sjEnKdkA6a7vsKl9OTFZHHmMV2Aoib2BD-OK8nZOCJ1X-80OTU_tFYoVhmBg2pcTahohm-55ep2sdL66haBCHX7MqV0U0XJ9rNN0Eucc654SU4KLXpaipi44wARW0-rtnQnQcyMHhE-_-6HLyroJgT-dF2DILRLS8ANPytQg0YSmCnEJXVVoe98whD9f7vJrEx1rfYvbOPDj"/>
+</div>
+</div>
+</header>
+<main class="mx-auto max-w-7xl w-full px-4 md:px-20 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-sm font-medium">
+<a class="text-primary/60 hover:text-primary transition-colors" href="#">Bosh sahifa</a>
+<span class="material-symbols-outlined text-sm text-primary/30">chevron_right</span>
+<a class="text-primary/60 hover:text-primary transition-colors" href="#">Gullar</a>
+<span class="material-symbols-outlined text-sm text-primary/30">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Atirgullar</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Image Gallery Component -->
+<div class="flex flex-col gap-4">
+<div class="aspect-square w-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-primary/5 shadow-sm group relative">
+<img alt="Hashamatli qizil atirgullar to'plami asosiy ko'rinishi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg text-primary">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden border-2 border-primary cursor-pointer">
+<img alt="Atirgullar yaqindan ko'rinishi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo-JJHRSQpZal8bmV4Opt_UN3M3iAGKgVBrPHICuzKyc_TGb1_71Y2uQC6MSZMybVEs2jQciIEwjLydmuRBa3qaqvowFYByhS5mjznkoLYP-I1mTpAkk-_zUyNraNN85VghrVYert1q2_Uct5I-ZbPJ7j8voIqeBiWa8TawL9_3XzLT_TksmV-bV00MzlfvUkpkrsJfuCMkIRGv8duWxu-oZh2iQ3yQaizp3x-7pQ3Db1zPLPd8QPYW19W_j6WHHUvpz6bfSkNtobU"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-primary/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Guldasta o'rami ko'rinishi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76dreEvtVkbX5r4WdiI368YQ20F3Hg-eixeT9chIkwjAnnSk78NewyXLhB_RMoslnOt6OjezRroMhdoGm2mv_ATpAP3nJv8846rIGPWFLRrzFUzpphaxkFYfbZK3jiZwrFiP_N9f-r2CnSOEcbhcV9k5U-gcfsR4OUq5U_QYwOtvi16qc02oipPICQhbJhz7Gzvgj-1d6iUId94bW61mnrs58t8uhV20JMxsUgqMyRhpxxE4Ysd31jb5otRrEI2zQ_KTqiwxTPrJ0"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-primary/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Sovg'a qutisidagi atirgullar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDDTVMtUufqBIUVfTWufyNbkHuK-N1hS5stFqi4GXUW1CT-ndYbcXn8syfnvUR35fhf4o1nN81U0Oh6qmctyjW9L6vGUctwE_BhEBiP14fGkmsr1b2f_2Z_DfJdDr6arB2wXSGvsWyw9LoshlnmTLfVu_KbZA4B2VNuPiPwX1uXs6OF_qA0szwWIw-gPPhg6CLCFhlN0Y97321Jl9Hnfni_ACgfYogE0d2aq0hig2v2KOSMjUoW6pszxm04MyylqOV8yq9QDU86RMg"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-primary/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity relative">
+<img alt="Atirgullar dekorativ ko'rinishi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-xs font-bold">+2</div>
+</div>
+</div>
+</div>
+<!-- Product Details Component -->
+<div class="flex flex-col gap-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Omborda bor</span>
+<div class="flex items-center gap-1 text-yellow-500">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm">star_half</span>
+<span class="text-xs text-slate-500 ml-1">(48 ta sharh)</span>
+</div>
+</div>
+<h1 class="text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">Qizil atirgullar to'plami</h1>
+<p class="text-2xl font-bold text-primary">250,000 so'm</p>
+</div>
+<!-- Seller Badge -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-slate-800 border border-primary/10 shadow-sm">
+<div class="bg-primary/10 p-2 rounded-lg text-primary">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400">Sotuvchi:</p>
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">"Gullar dunyosi" do'koni</p>
+</div>
+<div class="ml-auto flex items-center gap-1 text-xs text-green-600 font-bold">
+<span class="material-symbols-outlined text-sm">verified</span>
+                            Ishonchli
+                        </div>
+</div>
+<!-- Description -->
+<div class="space-y-4">
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Tavsif</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Ushbu hashamatli qizil atirgullar to'plami eng saralangan gullardan tashkil topgan. Har bir atirgul o'zining tarovati va xushbo'y hidi bilan ajralib turadi. Maxsus o'ramda taqdim etiladigan ushbu guldasta har qanday bayram yoki kutilmagan sovg'a uchun mukammal tanlovdir.
+                        </p>
+<ul class="grid grid-cols-2 gap-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> 25 ta premium atirgullar</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Sifatli o'ram</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Ozuqaviy kukun</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Express yetkazib berish</li>
+</ul>
+</div>
+<!-- Actions -->
+<div class="space-y-6 pt-4">
+<div class="flex items-center gap-6">
+<div class="flex items-center border border-primary/20 rounded-lg overflow-hidden h-12">
+<button class="px-4 py-2 hover:bg-primary/10 text-primary transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-12 text-center font-bold">1</span>
+<button class="px-4 py-2 hover:bg-primary/10 text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary text-white h-12 rounded-lg font-bold text-lg hover:bg-primary/90 shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                Savatga qo'shish
+                            </button>
+<button class="border border-primary/30 text-primary size-12 flex items-center justify-center rounded-lg hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-primary/10">
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary/60 text-xl">local_shipping</span>
+<span class="text-[10px] font-medium text-slate-500">Tezkor yetkazish</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-center border-x border-primary/10">
+<span class="material-symbols-outlined text-primary/60 text-xl">verified_user</span>
+<span class="text-[10px] font-medium text-slate-500">Sifat kafolati</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary/60 text-xl">payments</span>
+<span class="text-[10px] font-medium text-slate-500">Xavfsiz to'lov</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Reviews Section (YouTube Style Redesign) -->
+<div class="mt-20">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="text-xl font-bold text-slate-900 dark:text-slate-100">48 ta sharh</h2>
+<div class="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-400 cursor-pointer">
+<span class="material-symbols-outlined text-xl">sort</span>
+                        Saralash
+                    </div>
+</div>
+<!-- Add Comment Input -->
+<div class="flex gap-4 mb-10 group">
+<div class="bg-primary/20 rounded-full size-10 overflow-hidden shrink-0 border border-primary/10">
+<img alt="Sizning profil rasmingiz" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHU99HgGQwmoKwSCFSU2s6GxB39fa8mSCGWZytY9OytqQAdL8M5m6eLHnzry3kC3v5sjEnKdkA6a7vsKl9OTFZHHmMV2Aoib2BD-OK8nZOCJ1X-80OTU_tFYoVhmBg2pcTahohm-55ep2sdL66haBCHX7MqV0U0XJ9rNN0Eucc654SU4KLXpaipi44wARW0-rtnQnQcyMHhE-_-6HLyroJgT-dF2DILRLS8ANPytQg0YSmCnEJXVVoe98whD9f7vJrEx1rfYvbOPDj"/>
+</div>
+<div class="flex-1 flex flex-col gap-2">
+<input class="w-full bg-transparent border-0 border-b border-slate-300 dark:border-slate-700 focus:ring-0 focus:border-primary px-0 py-1.5 text-sm placeholder:text-slate-500 transition-colors" placeholder="Sharh qoldirish..." type="text"/>
+<div class="flex justify-end gap-3 opacity-0 group-focus-within:opacity-100 transition-opacity">
+<button class="px-4 py-2 text-sm font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">Bekor qilish</button>
+<button class="px-4 py-2 text-sm font-bold bg-primary/10 text-primary rounded-full cursor-not-allowed">Sharh qoldirish</button>
+</div>
+</div>
+</div>
+<!-- Comments List -->
+<div class="flex flex-col gap-6">
+<!-- Review 1 -->
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold shrink-0">
+                            AZ
+                        </div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm text-slate-900 dark:text-slate-100">@aziza_karimova</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">2 kun avval</span>
+</div>
+<p class="text-sm text-slate-800 dark:text-slate-200 leading-normal">
+                                Guldasta juda chiroyli ekan, atirgullar yangi va hidlari ham ajoyib. Yetkazib berish xizmati ham juda tez ishladi. Tavsiya qilaman!
+                            </p>
+<div class="flex items-center gap-4 pt-1">
+<div class="flex items-center gap-1.5">
+<button class="flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</button>
+<span class="text-xs text-slate-500">12</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-lg">thumb_down</span>
+</button>
+</div>
+<button class="text-xs font-bold px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">Javob qaytarish</button>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold shrink-0">
+                            JS
+                        </div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm text-slate-900 dark:text-slate-100">@jasur_sobirov</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">1 hafta avval</span>
+</div>
+<p class="text-sm text-slate-800 dark:text-slate-200 leading-normal">
+                                Onajonimga sovg'a qilgandim, juda xursand bo'ldilar. Sifatiga gap yo'q. O'rami ham juda did bilan qilingan.
+                            </p>
+<div class="flex items-center gap-4 pt-1">
+<div class="flex items-center gap-1.5">
+<button class="flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</button>
+<span class="text-xs text-slate-500">4</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-lg">thumb_down</span>
+</button>
+</div>
+<button class="text-xs font-bold px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">Javob qaytarish</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Similar Products Section -->
+<div class="mt-20 border-t border-primary/10 pt-12">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">O'xshash mahsulotlar</h2>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">
+                        Hammasini ko'rish
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Related Item 1 -->
+<div class="group relative flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Oq atirgullar guldastasi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTRkU2TbC4FY6iOko7ag61smG3KdflbuoNzeczTiG9pEbFtUwioifuMCf_P1v1_Vs77TLVitglw6WvigQ4QrahB-fuVkLl73mlXqBFWtbuDV3GWLuGdFvtQ_-hli8FqX_PvYxGTm4pbFqTAMemXM4sXz-sE3wlkXURCY0rdd0TwKlTdNWGmfXppQ4aSiDFaHA6rHVQC7nxoRtNIxFcjwT9VzCKAJ5HpqszPIRX0xJCqQ-I696tVbmsaF-emov7ZLKAng3IaxHUktX"/>
+<button class="absolute top-3 right-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm size-8 flex items-center justify-center rounded-full text-primary shadow-sm hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3">
+<span class="bg-primary text-white text-[10px] font-extrabold px-2 py-1 rounded-full uppercase tracking-tighter">Premium</span>
+</div>
+</div>
+<div class="p-4 flex flex-col grow">
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-1 mb-1">Oq atirgullar</h4>
+<div class="mt-auto">
+<p class="text-primary font-extrabold text-base">220,000 so'm</p>
+<button class="mt-3 w-full border border-primary/20 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+</div>
+<!-- Related Item 2 -->
+<div class="group relative flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Pushti atirgullar guldastasi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWm6U-nkF2Aa1YXzLgL_urlYgePySpUKqhfR6bgPFxBmfBZKWPK85jwsBT5_vsu7I_iOUSRvGy6zCkzFmWRKiziq1scnc1A_TGALoaZNTSgRXI1dzw94yB1tQI65hy_IOcd4dDVkj8BitKxszcu7nWAGzsuL5wM6-YeOgl_XunIfjqmhH0HT-z2EgRvylz49H7wrzweVT_6naZZwvfmZbnjRUtJADV4RPY6LClPgfDTMupOuU4NZd_jXcea82OPSxHqSKrRO8wvvXS"/>
+<button class="absolute top-3 right-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm size-8 flex items-center justify-center rounded-full text-primary shadow-sm hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col grow">
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-1 mb-1">Pushti lola</h4>
+<div class="mt-auto">
+<p class="text-primary font-extrabold text-base">180,000 so'm</p>
+<button class="mt-3 w-full border border-primary/20 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+</div>
+<!-- Related Item 3 -->
+<div class="group relative flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Aralash rangli guldasta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7dzwvmKtXZFu5Qi0FFqBzXdSVCQi-on_g8WK_8dyaH6GxXmzAq3GCIj_e92gCyL1sO04l-DxLAU4joGmMJygb7Lc4-RG74303LWQNsCwvdAQUr3sPPm8qZFHonfi1iy6RJnPBQVqOQtoI51Na9524fp8g3gIVSctDF7bCCxcCH1b80itz3waY0fEIyROTmSsgznAT3IkFSdHRij0MC5cIENYRFFvqX3OV9L1-qWsoIjoklWBWsVo3NFdhPULHAYElWKJuG3Htr-v"/>
+<button class="absolute top-3 right-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm size-8 flex items-center justify-center rounded-full text-primary shadow-sm hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3">
+<span class="bg-primary text-white text-[10px] font-extrabold px-2 py-1 rounded-full uppercase tracking-tighter">Bestseller</span>
+</div>
+</div>
+<div class="p-4 flex flex-col grow">
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-1 mb-1">Mix buket</h4>
+<div class="mt-auto">
+<p class="text-primary font-extrabold text-base">310,000 so'm</p>
+<button class="mt-3 w-full border border-primary/20 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+</div>
+<!-- Related Item 4 -->
+<div class="group relative flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Sariq atirgullar to'plami" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH47xSCwOcVNtZdyRjd2YHgeLCZ7PhxtcwXXiXjsCPyqN3FKHl7zU39bGHU4kjWqFpLF7LJp4-KDSt9Drb-MsqhD1Vzt2OlEdvs57aIn6p95dhmSNbNMhKtZmH1C59fWapIqd0puwK7HfUAd9n-yi_t5S5qxmYqX6YwQZK0fphIINWtF6fxt0zq3JNhPpfzv9wO3EcJQc1TU2Yhy91w-sYWmtH1H6-y6FG7vSIojca8TcWrbuYp8XBidrdHfiO6hyhF8zqNZVzf3_o"/>
+<button class="absolute top-3 right-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm size-8 flex items-center justify-center rounded-full text-primary shadow-sm hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col grow">
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-1 mb-1">Sariq orhideya</h4>
+<div class="mt-auto">
+<p class="text-primary font-extrabold text-base">450,000 so'm</p>
+<button class="mt-3 w-full border border-primary/20 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-primary/10 py-12 px-6 md:px-20 mt-auto">
+<div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_florist</span>
+<h2 class="text-xl font-extrabold text-slate-900 dark:text-slate-100">Gulso 1.0</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">O'zbekistondagi eng zamonaviy va sifatli gullar onlayn do'koni.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Ma'lumotlar</h4>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Biz haqimizda</a></li>
+<li><a class="hover:text-primary" href="#">Yetkazib berish</a></li>
+<li><a class="hover:text-primary" href="#">To'lov usullari</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Mijozlar uchun</h4>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Savol-javoblar</a></li>
+<li><a class="hover:text-primary" href="#">Qaytarish siyosati</a></li>
+<li><a class="hover:text-primary" href="#">Bog'lanish</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Ijtimoiy tarmoqlar</h4>
+<div class="flex gap-4">
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">send</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mx-auto max-w-7xl mt-12 pt-8 border-t border-primary/5 text-center text-xs text-slate-400">
+                © 2024 Gulso 1.0. Barcha huquqlar himoyalangan.
+            </div>
+</footer>
+</div>
+</div>
+</body></html>

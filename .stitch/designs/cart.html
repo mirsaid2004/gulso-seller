@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e7236a",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211117",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Gulso 1.0 - Savat va To'lov</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-6xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-lg text-white">
+<span class="material-symbols-outlined block">local_florist</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Gulso <span class="text-primary font-black">1.0</span></h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Asosiy</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Katalog</a>
+<a class="text-sm font-semibold text-primary" href="#">Savat</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="relative p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">notifications</span>
+<span class="absolute top-1 right-1 flex h-2 w-2 rounded-full bg-primary"></span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-sm">person</span>
+<span>Profil</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-6xl mx-auto px-4 md:px-10 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-sm font-medium">
+<a class="text-primary/70 hover:text-primary" href="#">Asosiy</a>
+<span class="material-symbols-outlined text-sm text-slate-400">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Savat va rasmiylashtirish</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Column: Items & Form -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Notification Box -->
+<div class="flex items-start gap-4 p-5 rounded-xl border border-primary/20 bg-primary/5">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Diqqat</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Tovarlar turli sotuvchilardan yetkaziladi, lekin bitta buyurtmada rasmiylashtiriladi.</p>
+</div>
+</div>
+<!-- Cart Items Section -->
+<section class="space-y-4">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Savatdagi mahsulotlar
+                        </h2>
+<div class="divide-y divide-slate-100 dark:divide-primary/10 bg-white dark:bg-background-dark/40 rounded-2xl border border-slate-100 dark:border-primary/10 overflow-hidden shadow-sm">
+<!-- Item 1 -->
+<div class="p-4 md:p-6 flex flex-wrap md:flex-nowrap items-center gap-6">
+<div class="w-24 h-24 rounded-lg bg-slate-100 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A beautiful bouquet of red roses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANlEHokV9zcqZJy6eriNN3IcYBZ4uAL5ssiHtVVQoQ4sBXc5vf2kFsttAKxe5wWJ54hIhGNFkUy8sF2qiyRpKJZ0urr0G8xNUPVboLr4UDe-Fz-E8DHWa05EXAqu0ColxXXX9Tz2jLGNDZRhe63J-QS7gxqUOavpVCl6775LYGmnFX_UAzt3Cv2Kpu7k-AhmVi6dydrzp6Ck9X_zJ4VnGzbsQlfVbyaZVY1MYdO8rw5SJi6qPscYlhsqEc3GLs_JnW8iZp7g6YifVs"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-bold text-lg text-slate-900 dark:text-slate-100 truncate">Qizil atirgullar "Premium"</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Sotuvchi: <span class="text-primary font-medium">Gulshan Bog'i</span></p>
+<p class="text-primary font-bold mt-1 text-lg">250 000 so'm</p>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-primary/10 px-4 py-2 rounded-full border border-slate-100 dark:border-primary/20">
+<button class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">remove</button>
+<span class="font-bold text-lg w-6 text-center">1</span>
+<button class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">add</button>
+</div>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="p-4 md:p-6 flex flex-wrap md:flex-nowrap items-center gap-6">
+<div class="w-24 h-24 rounded-lg bg-slate-100 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="White lilies in a minimalist vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3lbeb4OZQeNBxc9XjuwbBn9i7Os62vS71-3r4c_gY80jeKjsjyJY4l0uiYKb0CF0dNcWpT9wL8tuGtmg2ynVGFoR5BN4miyOuFncDoSue9KTs19fh1jyPS77ehD3Y3I38lnooutqqiLvUjzZRORICzejX5n9nLIWHSnioxkcU7p5LScY-7-aGqjOIYjWo7b3EcLykI-_ktUgVmgC5cEru2rnQ_H0wzokRqv-GtNArLxwatOYdrw8qC37wja12dBB_R3Zwybbus9bG"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-bold text-lg text-slate-900 dark:text-slate-100 truncate">Oq liliyalar dastasi</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Sotuvchi: <span class="text-primary font-medium">Zebuniso Flora</span></p>
+<p class="text-primary font-bold mt-1 text-lg">180 000 so'm</p>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-primary/10 px-4 py-2 rounded-full border border-slate-100 dark:border-primary/20">
+<button class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">remove</button>
+<span class="font-bold text-lg w-6 text-center">2</span>
+<button class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">add</button>
+</div>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Checkout Form Section -->
+<section class="space-y-6">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">local_shipping</span>
+                            Yetkazib berish ma'lumotlari
+                        </h2>
+<div class="bg-white dark:bg-background-dark/40 rounded-2xl border border-slate-100 dark:border-primary/10 p-6 md:p-8 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Qabul qiluvchi ismi</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Ismingizni kiriting" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Telefon raqami</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="+998 90 123 45 67" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Yetkazib berish manzili</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-slate-400">location_on</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Ko'cha, uy, xonadon raqami" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Yetkazib berish sanasi</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Vaqti</label>
+<select class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all">
+<option>09:00 - 12:00</option>
+<option>12:00 - 15:00</option>
+<option>15:00 - 18:00</option>
+<option>18:00 - 21:00</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300">Izoh (ixtiyoriy)</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Masalan: Uy kodi 123, pod'yezd oldiga qo'yib keting" rows="3"></textarea>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section class="space-y-6">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">payments</span>
+                            To'lov usuli
+                        </h2>
+<div class="bg-primary/10 border-2 border-primary rounded-2xl p-6 flex items-center gap-4">
+<div class="bg-primary text-white p-2 rounded-full">
+<span class="material-symbols-outlined block">check</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Qabul qilganda naqd pul bilan to'lash</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Buyurtmani eshigingizda qabul qilib olganingizdan so'ng to'laysiz.</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Summary Card -->
+<div class="lg:col-span-4">
+<div class="sticky top-28 bg-white dark:bg-background-dark/40 rounded-3xl border border-slate-100 dark:border-primary/10 p-8 shadow-xl shadow-primary/5 space-y-8">
+<h3 class="text-xl font-bold border-b border-slate-50 dark:border-primary/10 pb-4">Buyurtma xulosasi</h3>
+<div class="space-y-4">
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Mahsulotlar (3 ta)</span>
+<span class="font-medium">610 000 so'm</span>
+</div>
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Yetkazib berish</span>
+<span class="font-medium text-green-500">20 000 so'm</span>
+</div>
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Chegirma</span>
+<span class="font-medium text-primary">-0 so'm</span>
+</div>
+</div>
+<div class="pt-6 border-t border-slate-100 dark:border-primary/10">
+<div class="flex justify-between items-end mb-8">
+<span class="text-lg font-bold">Jami summa:</span>
+<span class="text-3xl font-black text-primary">630 000 so'm</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-black py-4 rounded-2xl shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-3 active:scale-95 group">
+<span>BUYURTMA BERISH</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="mt-6 text-center text-xs text-slate-500 leading-relaxed uppercase tracking-widest font-bold">
+                                Ishonchli va xavfsiz xizmat ko'rsatish
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-100 dark:border-primary/10 py-12 bg-white dark:bg-background-dark">
+<div class="max-w-6xl mx-auto px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3 opacity-50">
+<div class="bg-slate-400 p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block text-sm">local_florist</span>
+</div>
+<h1 class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">Gulso 1.0</h1>
+</div>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Yordam</a>
+<a class="hover:text-primary transition-colors" href="#">Qoidalar</a>
+<a class="hover:text-primary transition-colors" href="#">Aloqa</a>
+</div>
+<p class="text-sm text-slate-400">© 2024 Gulso. Barcha huquqlar himoyalangan.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

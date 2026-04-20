@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#e7236a",
+              "background-light": "#f8f6f7",
+              "background-dark": "#211117",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 backdrop-blur-md dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-xl bg-primary text-white">
+<span class="material-symbols-outlined text-2xl">local_florist</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Gulso 1.0</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Bosh sahifa</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-primary" href="#">Kategoriyalar</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Buyurtmalar</a>
+</nav>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<div class="hidden max-w-xs flex-1 lg:block">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary/60">search</span>
+<input class="w-full rounded-lg border-none bg-primary/5 py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Qidiruv..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-slate-700 hover:bg-primary/10 dark:text-slate-200">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-slate-700 hover:bg-primary/10 dark:text-slate-200">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Shop Header Banner Section -->
+<div class="relative">
+<div class="h-48 w-full bg-cover bg-center sm:h-64 md:h-80" data-alt="Modern flower shop interior with bright colors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIrWjfsgDRVQC9WVyDasJDd9CICBPTfji6bx7_XN36VuAjd2MwDq9zaW_fXoTLRiMC0y2PDUxEJwnAF5hfR-C-bHlbxUjozVszz1eIH2bLHw7n57oJ9ELR04YM55Z4hV7WRwDNDQWKLs8n5DPp5n6azceCuvO1Q7J9n23yQBlyfpOrTcNBHclZ3XSIz7Uj7oWcTi3NBQBBKkLI4cKBb8NI1bK9wPz3dpZVXPcUTDLpo4K3aZol_eutZrHsEqqbVN_iP5kCjdMi0NyS');">
+<div class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-transparent to-transparent"></div>
+</div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="relative -mt-16 flex flex-col items-center gap-6 md:-mt-20 md:flex-row md:items-end">
+<div class="size-32 shrink-0 overflow-hidden rounded-2xl border-4 border-white bg-white shadow-xl dark:border-background-dark">
+<img alt="Shop Logo" class="h-full w-full object-cover" data-alt="Elegant floral shop logo profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQDlQelo6bJOvyVb1d6x7x0Mf4auHYE561AHJgoQQPCkKc23yf-HUcSxiqECTc4wtkoyMdy8sE6REEuz23MoyvYhIEG8GDmm7KeW_qTGTZA7UKlxsbwtQYqMLFyZfmkvgZEVTiLguN2OYNrDOd3UYFh_TP1Yr4qz2Y3_crSnTnmaR4PVF2EhBQSKs8g76Cqb2PNPnr1ZJLarko2fJcDOfiEtcVC3LwoYJ5qFwWFsmAPcbbH4Fk7Gq_gmDV_CiRgm7tb83hdFPJw4mL"/>
+</div>
+<div class="flex flex-1 flex-col items-center text-center md:items-start md:pb-2 md:text-left">
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Gullar dunyosi</h1>
+<div class="mt-2 flex flex-wrap items-center justify-center gap-4 text-sm font-medium text-slate-600 dark:text-slate-400 md:justify-start">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-lg">star</span>
+<span class="text-slate-900 dark:text-white font-bold">4.9</span>
+<span class="text-xs">(120 sharh)</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-lg">group</span>
+<span class="text-slate-900 dark:text-white font-bold">2.5k</span>
+<span class="text-xs">Obunachilar</span>
+</span>
+</div>
+<p class="mt-3 max-w-xl text-slate-600 dark:text-slate-400">Siz uchun eng go'zal gullar va sovg'alar to'plami. Har bir guldastani sevgi bilan tayyorlaymiz.</p>
+</div>
+<div class="flex shrink-0 gap-3 pb-2">
+<button class="flex items-center gap-2 rounded-xl bg-primary px-8 py-3 font-bold text-white shadow-lg shadow-primary/30 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-lg">person_add</span>
+                            Obuna bo'lish
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="flex flex-col gap-8 lg:flex-row">
+<!-- Shop Info Sidebar -->
+<aside class="w-full lg:w-80 space-y-6">
+<div class="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm dark:bg-background-dark/50">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Ma'lumotlar</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<div>
+<p class="text-sm font-bold">Yetkazib berish</p>
+<p class="text-sm text-slate-500">Toshkent bo'ylab 60 daqiqada</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="text-sm font-bold">Manzil</p>
+<p class="text-sm text-slate-500" data-location="Toshkent">Toshkent sh., Yunusobod tumani</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="text-sm font-bold">Ish vaqti</p>
+<p class="text-sm text-slate-500">09:00 - 21:00</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="text-sm font-bold">Telefon</p>
+<p class="text-sm text-slate-500">+998 90 123 45 67</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-2xl bg-primary/10 p-6">
+<h4 class="font-bold text-primary">Bugungi taklif!</h4>
+<p class="mt-2 text-sm text-slate-700 dark:text-slate-300">Birinchi buyurtmangiz uchun 10% chegirma oling. Kupon: GULSO10</p>
+</div>
+</aside>
+<!-- Product Content Area -->
+<div class="flex-1">
+<!-- Tabs -->
+<div class="mb-8 flex items-center gap-2 overflow-x-auto border-b border-primary/10 pb-px scrollbar-hide">
+<button class="whitespace-nowrap border-b-2 border-primary px-6 py-3 text-sm font-bold text-primary">Barchasi</button>
+<button class="whitespace-nowrap border-b-2 border-transparent px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">Gullar</button>
+<button class="whitespace-nowrap border-b-2 border-transparent px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">Guldastalar</button>
+<button class="whitespace-nowrap border-b-2 border-transparent px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">Sovg'alar</button>
+<button class="whitespace-nowrap border-b-2 border-transparent px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">Xonaki gullar</button>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Product Card 1 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Bouquet of pink and white roses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1OB7gVmAnUBAdQozOChlo4-rI9Xw4XBRqWuuVKjKuf_p6uiUiso8RvbEoPLhF_kEJZ2Ugy2TQLUvqSpk2bOXALTTFXZcsIYLhRT0jHIqii6l1C8chhM_2usnLpmjFM5dj9AxqpC-o-64QlEKr6YKuX2gSzqLH7orUIeYLPyHjl84j5uEK0LiAlm4PS-2yCl5ciSKTz8p2ttfrMEq9P5lvR6lcpM_YLUSvliX3yNp6DxQAukY4gj3tuTHwz2Rzz3cq8lX1AT7TC55g"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 rounded-lg bg-primary px-2 py-1 text-xs font-bold text-white uppercase tracking-wider">Yangi</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Tungi Pari Guldastasi</h4>
+<div class="mt-1 flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">250,000 UZS</span>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        4.8
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant white lily bouquet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3c2mI9UYfqTHdyScvFbloIhBUYNFbTMyeb8eNGHP-yeu_1WSAiCKe0jNiMupJXx3fHYZo0Z9AapMARJlKOQiGRjdpxwuh3OHFTwFjbdJml83WgAQ-Ta-ICfKF8OLCEg_bB2lSZ6krlwIMqjGz8tCbrshUc5zt1cF_C9kMkIxmFnLXytPi7kWS36y8ssP93xt8hKMGmtdiapFPQUHQ9Uoq3S8QC7L7r6IWzSyAMMI_UOTKPTQDP1PUatkOPdbOHAaofuR8HE0_oktu"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Oq Lilya To'plami</h4>
+<div class="mt-1 flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">185,000 UZS</span>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        5.0
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vibrant red tulips in a vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqvf7BwpFTGO0Vd7_W0hDEZC6eLz0n9dEOdcTcgXsgitjjzROMuBdYkxtRv0ooleqYs7Vjdi1_d7PcRscSlwSnOHG-d649Zpau3BZkszkccIDBWC-Hi2gjIpw8lfm-6qMCxoVuHSvnYLizV4J7M0hljU8Fn_elUU_e9xvfDey91gpmidTPuf3e4c2WLKsTRZ9fjPzrYnmKrMCHrw8dywbmEItrAR8RUOnwhQYY0QxxLrEdUGI6EklMcF_l5VGARx1EH7GdMFwTUmKN"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 rounded-lg bg-red-500 px-2 py-1 text-xs font-bold text-white uppercase tracking-wider">-20%</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Qizil Tyulpanlar</h4>
+<div class="mt-1 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-lg font-extrabold text-primary">120,000 UZS</span>
+<span class="text-xs text-slate-400 line-through">150,000 UZS</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        4.7
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Beautiful spring flower mix" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyWLRO1Tktpl05fl06jj10ipc2uWxyhUi8PPWEVkM4iV0jIl5ApIZZ27-LSdJfc5v87rBtRRk0cI3aJbveEOKcL9pPz57PR-InJ7ags_UZ8n_jLyVFkE3N4xk8IZOxPwanM_Xr7s8NYVGP205RwpgDiw7-HI1nx-PuFv54ONope_T-Jkxeg-Rh9g_VfnNtTeoDPdLGzwEfKqRDzvZk8_Q4rrXoW2sLw05LJD8bmvGWjR8jkvBTChJX56CKRwjP28QWJSvsEW4m7fsX"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Bahor Nafasi</h4>
+<div class="mt-1 flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">310,000 UZS</span>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        4.9
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Gift box with small flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsy6wbx57YOXuz08LGyLYeZb-puPb_SA-gOS7d104WOYxUYh0P9wVvHAsRG1_R4gueeXcWRVJmnctvupY4zGtiXo2UgH19yr7QIY8I83E50C40HaKOkjpZ9o1uBF94npju_RL9rF3PqtDQEbcjZT6zdba6x_kVM5c9ow_OSbDMYnZQzMULyWQhz46pDk5OovNxj-y-HwT53KsQXWG5ecRHpc1cLRp0wJ0kIAyHL46MqhDE7nvt0R08iHSE5jSW-zWlz9yZoT8sd0F5"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Sovg'a Box</h4>
+<div class="mt-1 flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">450,000 UZS</span>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        4.6
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary/10 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-background-dark/30">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Product" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Single elegant red rose" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-d1keuyIM5f-OOlTYzJKPbjZpXS7Yh-89SKdZIjgzhiLePGC4D5dKfRpJnPWAqPQYz7H7izH9R5u9ngabh3FAL2-4BChJbkmKXcsxeG8CtXooknhMvzjioB8v1siIaFyHrX8QAUTl-BMhvf6Maup3uiTJ7jMqwq6OU-cWDfOg1oFhboew6vhAW4kbpdVrC5-jZHf0k-pK1FqhsjAVNbemW1AoR49wYQONUaeV3BNzXVnc7lCuPRdh1qCAKHjkTEXoZRyXi4MgMMr1"/>
+<button class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-white/80 text-primary shadow-sm backdrop-blur hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Yagona Atirgul</h4>
+<div class="mt-1 flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">25,000 UZS</span>
+<div class="flex items-center gap-1 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-yellow-500">star</span>
+                                        4.9
+                                    </div>
+</div>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 py-2.5 font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                    Savatga
+                                </button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex items-center justify-center gap-2">
+<button class="flex size-10 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-primary/10 text-slate-600 hover:text-primary">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-primary font-bold text-white">1</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-primary/10 text-slate-600 hover:text-primary">2</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-primary/10 text-slate-600 hover:text-primary">3</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-primary/10 text-slate-600 hover:text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-20 border-t border-primary/10 bg-white py-12 dark:bg-background-dark">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl">local_florist</span>
+</div>
+<h3 class="text-lg font-bold">Gulso 1.0</h3>
+</div>
+<p class="text-sm text-slate-500">O'zbekistondagi eng yirik gullar va sovg'alar yetkazib berish xizmati.</p>
+</div>
+<div>
+<h4 class="mb-4 font-bold text-slate-900 dark:text-white">Kategoriyalar</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Barcha gullar</a></li>
+<li><a class="hover:text-primary" href="#">Guldastalar</a></li>
+<li><a class="hover:text-primary" href="#">To'y guldastalari</a></li>
+<li><a class="hover:text-primary" href="#">Sovg'alar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="mb-4 font-bold text-slate-900 dark:text-white">Yordam</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">FAQ</a></li>
+<li><a class="hover:text-primary" href="#">Yetkazib berish</a></li>
+<li><a class="hover:text-primary" href="#">Qaytarish siyosati</a></li>
+<li><a class="hover:text-primary" href="#">Bog'lanish</a></li>
+</ul>
+</div>
+<div>
+<h4 class="mb-4 font-bold text-slate-900 dark:text-white">Ijtimoiy tarmoqlar</h4>
+<div class="flex gap-4">
+<a class="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">linked_camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-primary/5 pt-8 text-center text-sm text-slate-400">
+                © 2024 Gulso 1.0. Barcha huquqlar himoyalangan.
+            </div>
+</div>
+</footer>
+</div>
+</body></html>
