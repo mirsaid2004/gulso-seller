@@ -1,0 +1,272 @@
+{
+  "common": {
+    "search": "Qidiruv...",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "back": "Orqaga",
+    "loading": "Yuklanmoqda...",
+    "error": "Xato yuz berdi",
+    "id": "ID",
+    "som": "so'm",
+    "dona": "dona"
+  },
+  "landing": {
+    "nav": {
+      "features": "Imkoniyatlar",
+      "howItWorks": "Qanday ishlaydi",
+      "pricing": "Tariflar",
+      "help": "Yordam",
+      "goToPanel": "Panelga o'tish"
+    },
+    "hero": {
+      "badge": "Sotuvchilar uchun yangi imkoniyatlar",
+      "title1": "Gulso bilan",
+      "title2": "biznesingizni",
+      "title3": "yangi bosqichga olib chiqing",
+      "description": "O'z mahsulotlaringizni millionlab xaridorlarga soting. Biz yetkazib berish, marketing va to'lovlarni o'z bo'ynimizga olamiz. Siz esa faqat o'sishga e'tibor qarating.",
+      "startSelling": "Sotuvchi bo'lish",
+      "learnMore": "Batafsil ma'lumot"
+    },
+    "benefits": {
+      "eyebrow": "Nima uchun Gulso Seller?",
+      "title": "Biznesingiz uchun eng yaxshi sharoitlar",
+      "description": "Sotuvchilarimizga faqat sotuvga e'tibor qaratishlari uchun barcha texnik va logistik muammolarni o'zimiz hal qilamiz.",
+      "logistics": {
+        "title": "Markazlashgan logistika",
+        "desc": "Mahsulotlaringizni bizning omborga keltiring, qolganini — qadoqlash, yetkazib berish va qaytarishlarni biz hal qilamiz."
+      },
+      "customers": {
+        "title": "Katta mijozlar bazasi",
+        "desc": "Sizning mahsulotlaringiz har kuni minglab faol xaridorlar ko'radigan platformada joylashadi. Marketing bizdan!"
+      },
+      "analytics": {
+        "title": "Moliyaviy tahlil",
+        "desc": "Qulay shaxsiy kabinet orqali sotuvlaringizni tahlil qiling va hisob-kitoblarni real vaqt rejimida kuzatib boring."
+      }
+    },
+    "howItWorks": {
+      "title": "Qanday boshlash kerak?",
+      "step1": { "title": "Ro'yxatdan o'ting", "desc": "Shaxsiy ma'lumotlaringiz va do'koningiz nomini kiriting. Ariza topshirish atigi 5 daqiqa vaqt oladi." },
+      "step2": { "title": "Mahsulotlarni yuklang", "desc": "Tavsiflar va yuqori sifatli fotosuratlar yordamida mahsulot kartochkalarini yarating." },
+      "step3": { "title": "Sotuvni boshlang", "desc": "Buyurtmalarni qabul qiling va foyda oling. Biz har bir qadamda sizga yordam beramiz." }
+    },
+    "stats": {
+      "sellers": "Faol sotuvchilar",
+      "buyers": "Oylik xaridorlar",
+      "support": "Qo'llab-quvvatlash",
+      "delivery": "Yetkazib berish nuqtalari"
+    },
+    "cta": {
+      "title": "Tayyormisiz?",
+      "description": "Hozir ro'yxatdan o'ting va birinchi sotuvlaringizni amalga oshiring. Biznesingizni kengaytirish vaqti keldi.",
+      "start": "Hoziroq boshlash",
+      "contact": "Biz bilan bog'lanish"
+    },
+    "footer": {
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari",
+      "partnership": "Hamkorlik",
+      "copyright": "© 2024 Gulso. Barcha huquqlar himoyalangan."
+    }
+  },
+  "sidebar": {
+    "appName": "Gulso 1.0",
+    "subtitle": "Sotuvchi paneli",
+    "nav": {
+      "dashboard": "Asosiy",
+      "orders": "Buyurtmalar",
+      "products": "Mahsulotlar",
+      "finance": "Moliya",
+      "settings": "Sozlamalar"
+    },
+    "logout": "Chiqish"
+  },
+  "login": {
+    "title": "Xush kelibsiz",
+    "subtitle": "Telefon raqamingizni kiriting",
+    "phoneLabel": "Telefon raqam",
+    "phonePlaceholder": "90 123 45 67",
+    "phoneHint": "SMS orqali tasdiqlash kodi yuboriladi",
+    "sendCode": "Kodni yuborish"
+  },
+  "otp": {
+    "title": "Kodni kiriting",
+    "subtitle": "{{phone}} raqamiga yuborilgan 6 xonali kodni kiriting",
+    "resend": "Kodni qayta yuborish",
+    "verify": "Tasdiqlash",
+    "demoHint": "Demo uchun kod"
+  },
+  "dashboard": {
+    "title": "Xush kelibsiz!",
+    "stats": {
+      "totalSales": "Umumiy Savdo",
+      "salesChange": "+20.1% o'tgan oydan",
+      "orders": "Buyurtmalar",
+      "ordersChange": "+12% kechagidan",
+      "products": "Mahsulotlar",
+      "productsActive": "Active sotuvda",
+      "customers": "Mijozlar",
+      "customersNew": "+48 yangi mijoz"
+    },
+    "recentOrders": "So'nggi buyurtmalar",
+    "ordersTablePlaceholder": "Buyurtmalar jadvali bu yerda bo'ladi"
+  },
+  "orders": {
+    "title": "Buyurtmalar",
+    "subtitle": "Sizning do'koningizdagi barcha buyurtmalar oqimi",
+    "searchPlaceholder": "Mijoz ismi yoki telefon...",
+    "empty": "Buyurtmalar topilmadi",
+    "orderNumber": "Buyurtma #{{id}}",
+    "tabs": {
+      "ALL": "Barchasi",
+      "ACCEPTED": "Yangi",
+      "PREPARING": "Tayyorlanmoqda",
+      "IN_DELIVERY": "Yetkazilmoqda",
+      "COMPLETED": "Yakunlangan",
+      "CANCELLED": "Bekor qilingan"
+    },
+    "status": {
+      "ACCEPTED": "QABUL QILINDI",
+      "PREPARING": "TAYYORLANMOQDA",
+      "IN_DELIVERY": "YETKAZILMOQDA",
+      "COMPLETED": "BAJARILDI",
+      "CANCELLED": "BEKOR QILINDI"
+    },
+    "deliveryType": {
+      "DELIVERY": "YETKAZIB BERISH",
+      "PICKUP": "O'ZI OLISH"
+    },
+    "sections": {
+      "items": "Mahsulotlar",
+      "payment": "To'lov ma'lumotlari",
+      "delivery": "Yetkazib berish"
+    },
+    "payment": {
+      "total": "Umumiy summa:",
+      "commission": "Platforma komissiyasi (10%):",
+      "net": "Sizga to'lanadi:"
+    },
+    "delivery": {
+      "date": "Sana:",
+      "address": "Manzil:",
+      "method": "Usul:",
+      "pickup": "Do'kondan o'zi oladi",
+      "customer": "Mijoz:",
+      "comment": "Sharh:"
+    },
+    "actions": {
+      "cancel": "Bekor qilish",
+      "startPreparing": "Tayyorlashni boshlash",
+      "sendCourier": "Kuryerga topshirish",
+      "markDone": "Buyurtma bajarildi"
+    }
+  },
+  "products": {
+    "title": "Mahsulotlar",
+    "subtitle": "Sizning do'koningizdagi barcha mahsulotlar ro'yxati va holati",
+    "searchPlaceholder": "Mahsulotlar bo'ylab qidirish...",
+    "addNew": "Yangi tovar",
+    "edit": "Tahrirlash",
+    "empty": "Mahsulotlar topilmadi",
+    "categories": {
+      "all": "Barchasi",
+      "flowers": "Gullar 🌸",
+      "gifts": "Sovg'alar 🎁",
+      "bakery": "Pishiriqlar 🎂"
+    },
+    "status": {
+      "active": "MAVJUD",
+      "outOfStock": "MAVJUD EMAS"
+    },
+    "form": {
+      "editTitle": "Mahsulotni tahrirlash",
+      "createTitle": "Yangi mahsulot",
+      "category": "Kategoriya",
+      "categoryOptions": {
+        "flowers": "Gullar",
+        "gifts": "Sovg'alar",
+        "bakery": "Pishiriqlar"
+      },
+      "info": "Ma'lumotlar",
+      "autoTranslateTitle": "Faol tildan boshqa tillarga tarjima qilish",
+      "autoTranslate": "Avtomatik tarjima",
+      "namePlaceholder": "Mahsulot nomi",
+      "descPlaceholder": "Tavsif",
+      "specs": "Xususiyatlar",
+      "addSpec": "Qo'shish",
+      "specsHint": "«Qo'shish» tugmasini bosing",
+      "specPlaceholder": "Xususiyat {{n}}",
+      "priceSection": "Narx va miqdor",
+      "pricePlaceholder": "Narx",
+      "quantityPlaceholder": "Soni",
+      "priceLabel": "Narx (so'm)",
+      "discountLabel": "Chegirma",
+      "quantityLabel": "Miqdor (dona)",
+      "images": "Rasmlar",
+      "mainImage": "Asosiy",
+      "addImage": "Rasm",
+      "imagesHint": "Kamida 1 ta rasm qo'shing",
+      "enterNameFirst": "Avval nomni kiriting",
+      "translateError": "Tarjima xatosi",
+      "save": "Saqlash",
+      "add": "Qo'shish",
+      "validation": {
+        "nameRequired": "UZ nomi kiritilishi shart",
+        "priceMin": "Narx 0 dan katta bo'lishi kerak",
+        "quantityMin": "Miqdor 0 dan kam bo'lmasligi kerak"
+      }
+    }
+  },
+  "finance": {
+    "title": "Moliya",
+    "totalRevenue": "Umumiy daromad",
+    "commission": "Gulso komissiyasi (10%)",
+    "payableAmount": "To'lanadigan summa",
+    "balance": "Hisobdagi balans",
+    "last30Days": "So'nggi 30 kunlik ko'rsatkich",
+    "commissionFee": "Platforma xizmat haqi",
+    "readyToWithdraw": "Yechib olish uchun tayyor",
+    "salesTable": "Sotuvlar jadvali",
+    "filter": "Saralash",
+    "export": "Eksport",
+    "exportComingSoon": "Eksport funksiyasi tez orada",
+    "columns": {
+      "date": "Sana",
+      "orderId": "Buyurtma raqami",
+      "amount": "Summa",
+      "commission": "Komissiya",
+      "paymentStatus": "To'lov holati"
+    },
+    "empty": "Tranzaksiyalar topilmadi",
+    "totalOrders": "Jami: {{count}} ta buyurtma",
+    "pagination": {
+      "prev": "Oldingi",
+      "next": "Keyingi"
+    },
+    "withdrawTitle": "Mablag'larni yechib olish",
+    "withdrawDesc": "Yig'ilgan mablag'larni bank kartangizga yoki hisob raqamingizga o'tkazish uchun so'rov qoldiring.",
+    "withdraw": "Pul yechib olish",
+    "withdrawBtn": "Yechib olish",
+    "withdrawSuccess": "Pul yechib olish so'rovi yuborildi",
+    "status": {
+      "paid": "To'langan",
+      "pending": "Kutilmoqda"
+    }
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "empty": "Bildirishnomalar yo'q",
+    "viewAllOrders": "Barcha buyurtmalarni ko'rish"
+  },
+  "settings": {
+    "title": "Sozlamalar",
+    "buildingTitle": "Tez orada",
+    "buildingDesc": "Sozlamalar sahifasi ishlab chiqilmoqda. Yaqin vaqt ichida chiqariladi.",
+    "features": {
+      "profile": "Profil sozlamalari",
+      "notifications": "Bildirishnomalar",
+      "security": "Xavfsizlik",
+      "integrations": "Integratsiyalar"
+    }
+  }
+}

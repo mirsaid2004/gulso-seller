@@ -1,0 +1,272 @@
+{
+  "common": {
+    "search": "Search...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "id": "ID",
+    "som": "UZS",
+    "dona": "pcs"
+  },
+  "landing": {
+    "nav": {
+      "features": "Features",
+      "howItWorks": "How it works",
+      "pricing": "Pricing",
+      "help": "Help",
+      "goToPanel": "Go to panel"
+    },
+    "hero": {
+      "badge": "New opportunities for sellers",
+      "title1": "Take your business",
+      "title2": "to the next level",
+      "title3": "with Gulso",
+      "description": "Sell your products to millions of buyers. We handle delivery, marketing and payments — you focus on growing.",
+      "startSelling": "Become a seller",
+      "learnMore": "Learn more"
+    },
+    "benefits": {
+      "eyebrow": "Why Gulso Seller?",
+      "title": "The best conditions for your business",
+      "description": "We handle all technical and logistical challenges so our sellers can focus solely on selling.",
+      "logistics": {
+        "title": "Centralised logistics",
+        "desc": "Bring your products to our warehouse; we handle packaging, delivery and returns."
+      },
+      "customers": {
+        "title": "Large customer base",
+        "desc": "Your products are placed on a platform seen daily by thousands of active buyers. Marketing is on us!"
+      },
+      "analytics": {
+        "title": "Financial analytics",
+        "desc": "Analyse your sales and track settlements in real time through a convenient personal dashboard."
+      }
+    },
+    "howItWorks": {
+      "title": "How to get started?",
+      "step1": { "title": "Register", "desc": "Enter your personal details and shop name. Applying takes just 5 minutes." },
+      "step2": { "title": "Upload products", "desc": "Create product listings with descriptions and high-quality photos." },
+      "step3": { "title": "Start selling", "desc": "Accept orders and earn revenue. We support you every step of the way." }
+    },
+    "stats": {
+      "sellers": "Active sellers",
+      "buyers": "Monthly buyers",
+      "support": "24/7 Support",
+      "delivery": "Delivery points"
+    },
+    "cta": {
+      "title": "Ready?",
+      "description": "Register now and make your first sales. It's time to grow your business.",
+      "start": "Start now",
+      "contact": "Contact us"
+    },
+    "footer": {
+      "privacy": "Privacy policy",
+      "terms": "Terms of use",
+      "partnership": "Partnership",
+      "copyright": "© 2024 Gulso. All rights reserved."
+    }
+  },
+  "sidebar": {
+    "appName": "Gulso 1.0",
+    "subtitle": "Seller panel",
+    "nav": {
+      "dashboard": "Dashboard",
+      "orders": "Orders",
+      "products": "Products",
+      "finance": "Finance",
+      "settings": "Settings"
+    },
+    "logout": "Log out"
+  },
+  "login": {
+    "title": "Welcome",
+    "subtitle": "Enter your phone number",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "90 123 45 67",
+    "phoneHint": "A confirmation code will be sent via SMS",
+    "sendCode": "Send code"
+  },
+  "otp": {
+    "title": "Enter the code",
+    "subtitle": "Enter the 6-digit code sent to {{phone}}",
+    "resend": "Resend code",
+    "verify": "Verify",
+    "demoHint": "Demo code"
+  },
+  "dashboard": {
+    "title": "Welcome!",
+    "stats": {
+      "totalSales": "Total Sales",
+      "salesChange": "+20.1% from last month",
+      "orders": "Orders",
+      "ordersChange": "+12% from yesterday",
+      "products": "Products",
+      "productsActive": "Active listings",
+      "customers": "Customers",
+      "customersNew": "+48 new customers"
+    },
+    "recentOrders": "Recent orders",
+    "ordersTablePlaceholder": "Orders table will be here"
+  },
+  "orders": {
+    "title": "Orders",
+    "subtitle": "All orders from your store",
+    "searchPlaceholder": "Customer name or phone...",
+    "empty": "No orders found",
+    "orderNumber": "Order #{{id}}",
+    "tabs": {
+      "ALL": "All",
+      "ACCEPTED": "New",
+      "PREPARING": "Preparing",
+      "IN_DELIVERY": "In delivery",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled"
+    },
+    "status": {
+      "ACCEPTED": "ACCEPTED",
+      "PREPARING": "PREPARING",
+      "IN_DELIVERY": "IN DELIVERY",
+      "COMPLETED": "COMPLETED",
+      "CANCELLED": "CANCELLED"
+    },
+    "deliveryType": {
+      "DELIVERY": "DELIVERY",
+      "PICKUP": "PICKUP"
+    },
+    "sections": {
+      "items": "Items",
+      "payment": "Payment details",
+      "delivery": "Delivery"
+    },
+    "payment": {
+      "total": "Total amount:",
+      "commission": "Platform commission (10%):",
+      "net": "You receive:"
+    },
+    "delivery": {
+      "date": "Date:",
+      "address": "Address:",
+      "method": "Method:",
+      "pickup": "Customer picks up in store",
+      "customer": "Customer:",
+      "comment": "Note:"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "startPreparing": "Start preparing",
+      "sendCourier": "Hand to courier",
+      "markDone": "Mark as done"
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "List and status of all products in your store",
+    "searchPlaceholder": "Search products...",
+    "addNew": "New product",
+    "edit": "Edit",
+    "empty": "No products found",
+    "categories": {
+      "all": "All",
+      "flowers": "Flowers 🌸",
+      "gifts": "Gifts 🎁",
+      "bakery": "Bakery 🎂"
+    },
+    "status": {
+      "active": "IN STOCK",
+      "outOfStock": "OUT OF STOCK"
+    },
+    "form": {
+      "editTitle": "Edit product",
+      "createTitle": "New product",
+      "category": "Category",
+      "categoryOptions": {
+        "flowers": "Flowers",
+        "gifts": "Gifts",
+        "bakery": "Bakery"
+      },
+      "info": "Details",
+      "autoTranslateTitle": "Translate from current language to others",
+      "autoTranslate": "Auto-translate",
+      "namePlaceholder": "Product name",
+      "descPlaceholder": "Description",
+      "specs": "Specifications",
+      "addSpec": "Add",
+      "specsHint": "Click «Add» to add a spec",
+      "specPlaceholder": "Spec {{n}}",
+      "priceSection": "Price & quantity",
+      "pricePlaceholder": "Price",
+      "quantityPlaceholder": "Qty",
+      "priceLabel": "Price (UZS)",
+      "discountLabel": "Discount",
+      "quantityLabel": "Quantity (pcs)",
+      "images": "Images",
+      "mainImage": "Main",
+      "addImage": "Photo",
+      "imagesHint": "Add at least 1 image",
+      "enterNameFirst": "Enter a name first",
+      "translateError": "Translation error",
+      "save": "Save",
+      "add": "Add",
+      "validation": {
+        "nameRequired": "UZ name is required",
+        "priceMin": "Price must be greater than 0",
+        "quantityMin": "Quantity cannot be less than 0"
+      }
+    }
+  },
+  "finance": {
+    "title": "Finance",
+    "totalRevenue": "Total revenue",
+    "commission": "Gulso commission (10%)",
+    "payableAmount": "Payable amount",
+    "balance": "Account balance",
+    "last30Days": "Last 30 days",
+    "commissionFee": "Platform service fee",
+    "readyToWithdraw": "Ready to withdraw",
+    "salesTable": "Sales table",
+    "filter": "Filter",
+    "export": "Export",
+    "exportComingSoon": "Export feature coming soon",
+    "columns": {
+      "date": "Date",
+      "orderId": "Order ID",
+      "amount": "Amount",
+      "commission": "Commission",
+      "paymentStatus": "Payment status"
+    },
+    "empty": "No transactions found",
+    "totalOrders": "Total: {{count}} orders",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "withdrawTitle": "Withdraw funds",
+    "withdrawDesc": "Submit a request to transfer your accumulated funds to your bank card or account.",
+    "withdraw": "Withdraw funds",
+    "withdrawBtn": "Withdraw",
+    "withdrawSuccess": "Withdrawal request submitted",
+    "status": {
+      "paid": "Paid",
+      "pending": "Pending"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications yet",
+    "viewAllOrders": "View all orders"
+  },
+  "settings": {
+    "title": "Settings",
+    "buildingTitle": "Coming soon",
+    "buildingDesc": "The settings page is under construction. It will be released shortly.",
+    "features": {
+      "profile": "Profile settings",
+      "notifications": "Notifications",
+      "security": "Security",
+      "integrations": "Integrations"
+    }
+  }
+}

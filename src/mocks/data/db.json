@@ -1,0 +1,1772 @@
+{
+  "users": [
+    {
+      "id": 123,
+      "name": "Mirsaid",
+      "phone": "+998979997969",
+      "email": "mir21.07.2004@gmail.com",
+      "birthday": "2026-05-12",
+      "role": [
+        "USER"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-01T10:00:00",
+      "image": ""
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Gullar do'koni"
+    },
+    {
+      "id": 2,
+      "name": "Sweet Dreams"
+    },
+    {
+      "id": 3,
+      "name": "Le Dessert"
+    },
+    {
+      "id": 4,
+      "name": "Flora Art"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Rose 'Magic' Bouquet",
+        "az": "Qızıl Gül 'Sehir' Buketi",
+        "ru": "Букет роз 'Волшебство'"
+      },
+      "price": 390000,
+      "discount": 0.13,
+      "rating": 4.8,
+      "reviewCount": 45,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+      "stockQuantity": 20,
+      "companyId": 1,
+      "isNew": true,
+      "isBestSeller": true,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "A breathtaking bouquet of 21 premium red roses arranged with elegant greenery. Perfect for expressing deep emotions on special occasions.",
+          "az": "Zarif yaşıllıqla bəzədilmiş 21 premium qırmızı güldən ibarət möhtəşəm buket. Xüsusi münasibətlər üçün idealdır.",
+          "ru": "Великолепный букет из 21 премиальной красной розы, украшенный изящной зеленью. Идеально для выражения глубоких эмоций."
+        },
+        "specifications": {
+          "en": [
+            "21 premium red roses",
+            "Fresh eucalyptus greens",
+            "Wrapped in premium kraft paper",
+            "Ribbon included",
+            "Vase life: 7-10 days"
+          ],
+          "az": [
+            "21 ədəd premium qırmızı gül",
+            "Təzə evkalipt yaşıllığı",
+            "Premium kraft kağızında bükülmüş",
+            "Lent daxildir",
+            "Vaza ömrü: 7-10 gün"
+          ],
+          "ru": [
+            "21 premium красная роза",
+            "Свежая зелень эвкалипта",
+            "Упаковано в крафт-бумагу",
+            "Лента включена",
+            "Срок вазы: 7-10 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 1,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+            "primary": true
+          },
+          {
+            "id": 2,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAOgOFjegNHmLl4tjQe4FG5u_7aX-PuMzLmb_ASHyRexoV3dyODGaJvQDp2mKdK1c5ZpzP5Q_gOBEKhqQX0ahM8Td7cwQkdaPpEAuPaum0fSpDk3rWWremCZQTNN7f-DaI9KKeipor2hFN1EJCl1WrtAsHn8knzXwgvtNpBb9HtH6wro9JGX7dBrIBwAFOPUEc0-iX_vgTyrNTOjkMkPWuOhvuHAdzNK8nzaHLZDjLPhRdzFOs5NDyjiyR9QcnWifTDEi_EShjbqhFy",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "Red Roses Bundle",
+        "az": "Qızıl Atirgüllər Dəsti",
+        "ru": "Набор красных роз"
+      },
+      "price": 120000,
+      "discount": 0,
+      "rating": 4.5,
+      "reviewCount": 28,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAOgOFjegNHmLl4tjQe4FG5u_7aX-PuMzLmb_ASHyRexoV3dyODGaJvQDp2mKdK1c5ZpzP5Q_gOBEKhqQX0ahM8Td7cwQkdaPpEAuPaum0fSpDk3rWWremCZQTNN7f-DaI9KKeipor2hFN1EJCl1WrtAsHn8knzXwgvtNpBb9HtH6wro9JGX7dBrIBwAFOPUEc0-iX_vgTyrNTOjkMkPWuOhvuHAdzNK8nzaHLZDjLPhRdzFOs5NDyjiyR9QcnWifTDEi_EShjbqhFy",
+      "stockQuantity": 35,
+      "companyId": 1,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "A classic bundle of 11 fresh red roses, a timeless gift for your loved ones.",
+          "az": "11 ədəd təzə qırmızı güldən ibarət klassik dəst, yaxınlarınız üçün əbədi bir hədiyyə.",
+          "ru": "Классический набор из 11 свежих красных роз — вечный подарок для близких."
+        },
+        "specifications": {
+          "en": [
+            "11 fresh red roses",
+            "Seasonal greens",
+            "Gift-wrapped",
+            "Vase life: 5-7 days"
+          ],
+          "az": [
+            "11 ədəd təzə qırmızı gül",
+            "Mövsüm yaşıllığı",
+            "Hədiyyə kimi bükülmüş",
+            "Vaza ömrü: 5-7 gün"
+          ],
+          "ru": [
+            "11 свежих красных роз",
+            "Сезонная зелень",
+            "Упаковано как подарок",
+            "Срок вазы: 5-7 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 3,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAOgOFjegNHmLl4tjQe4FG5u_7aX-PuMzLmb_ASHyRexoV3dyODGaJvQDp2mKdK1c5ZpzP5Q_gOBEKhqQX0ahM8Td7cwQkdaPpEAuPaum0fSpDk3rWWremCZQTNN7f-DaI9KKeipor2hFN1EJCl1WrtAsHn8knzXwgvtNpBb9HtH6wro9JGX7dBrIBwAFOPUEc0-iX_vgTyrNTOjkMkPWuOhvuHAdzNK8nzaHLZDjLPhRdzFOs5NDyjiyR9QcnWifTDEi_EShjbqhFy",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "White Lily Bouquet",
+        "az": "Ağ Nilufar Buketi",
+        "ru": "Букет белых лилий"
+      },
+      "price": 145000,
+      "discount": 0.1,
+      "rating": 4.6,
+      "reviewCount": 15,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3lbeb4OZQeNBxc9XjuwbBn9i7Os62vS71-3r4c_gY80jeKjsjyJY4l0uiYKb0CF0dNcWpT9wL8tuGtmg2ynVGFoR5BN4miyOuFncDoSue9KTs19fh1jyPS77ehD3Y3I38lnooutqqiLvUjzZRORICzejX5n9nLIWHSnioxkcU7p5LScY-7-aGqjOIYjWo7b3EcLykI-_ktUgVmgC5cEru2rnQ_H0wzokRqv-GtNArLxwatOYdrw8qC37wja12dBB_R3Zwybbus9bG",
+      "stockQuantity": 18,
+      "companyId": 1,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "Elegant bouquet of 7 white oriental lilies symbolizing purity and grace. Wonderfully fragrant.",
+          "az": "Saflığı və zərifliyi simvollaşdıran 7 ağ şərq zirinc çiçəyindən ibarət zərif buket. Gözəl ətirlidir.",
+          "ru": "Элегантный букет из 7 белых восточных лилий, символизирующих чистоту и изящество. Чудесно ароматный."
+        },
+        "specifications": {
+          "en": [
+            "7 white oriental lilies",
+            "Baby's breath accent",
+            "Premium wrapping",
+            "Vase life: 8-12 days"
+          ],
+          "az": [
+            "7 ağ şərq zirinci",
+            "Gipsofil aksentli",
+            "Premium bükülmüş",
+            "Vaza ömrü: 8-12 gün"
+          ],
+          "ru": [
+            "7 белых восточных лилий",
+            "Акцент из гипсофилы",
+            "Премиум упаковка",
+            "Срок вазы: 8-12 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 4,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3lbeb4OZQeNBxc9XjuwbBn9i7Os62vS71-3r4c_gY80jeKjsjyJY4l0uiYKb0CF0dNcWpT9wL8tuGtmg2ynVGFoR5BN4miyOuFncDoSue9KTs19fh1jyPS77ehD3Y3I38lnooutqqiLvUjzZRORICzejX5n9nLIWHSnioxkcU7p5LScY-7-aGqjOIYjWo7b3EcLykI-_ktUgVmgC5cEru2rnQ_H0wzokRqv-GtNArLxwatOYdrw8qC37wja12dBB_R3Zwybbus9bG",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "Spring Composition",
+        "az": "Bahar Kompozisiyası",
+        "ru": "Весенняя композиция"
+      },
+      "price": 420000,
+      "discount": 0,
+      "rating": 4.9,
+      "reviewCount": 62,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5sdXkfH9qWe6DK8LCevkCBXD0c5pFr30P4juGUlT-16Cm1Jsi8dI5M0WlpkkJrsxqN_oaV_hxGNy8D_Ckrq-Oe7zzYxgAPouoDTuizT3KZe6S2MODp6cTxW5pfJgsHms8Os7OzRHEO_CIIBjGdqbksJSxujjYuoYYBNphHmiYQ9AhwddrI31HUQeklF9br3mG0nYB1_FT8XeETzTvXSrbyISWUYBW--jFP2qYXT7taH4096ZyeP0u1sd-i3GNGGgkTHhEJ_QaSKz0",
+      "stockQuantity": 12,
+      "companyId": 4,
+      "isNew": false,
+      "isBestSeller": true,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "A luxurious spring composition mixing peonies, ranunculus, and garden roses in soft pastel shades.",
+          "az": "Açıq pastel çalarlarda peoniya, ranunkulus və bağ güllərini birləşdirən lüks bahar kompozisiyası.",
+          "ru": "Роскошная весенняя композиция, сочетающая пионы, ранункулюсы и садовые розы в нежных пастельных тонах."
+        },
+        "specifications": {
+          "en": [
+            "Mixed peonies & ranunculus",
+            "Garden roses included",
+            "Seasonal foliage",
+            "Designer arrangement",
+            "Vase life: 6-9 days"
+          ],
+          "az": [
+            "Qarışıq peoniya və ranunkulus",
+            "Bağ gülləri daxildir",
+            "Mövsüm yarpaqları",
+            "Dizayner düzülüşü",
+            "Vaza ömrü: 6-9 gün"
+          ],
+          "ru": [
+            "Смешанные пионы и ранункулюсы",
+            "Садовые розы включены",
+            "Сезонная листва",
+            "Дизайнерская аранжировка",
+            "Срок вазы: 6-9 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 5,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5sdXkfH9qWe6DK8LCevkCBXD0c5pFr30P4juGUlT-16Cm1Jsi8dI5M0WlpkkJrsxqN_oaV_hxGNy8D_Ckrq-Oe7zzYxgAPouoDTuizT3KZe6S2MODp6cTxW5pfJgsHms8Os7OzRHEO_CIIBjGdqbksJSxujjYuoYYBNphHmiYQ9AhwddrI31HUQeklF9br3mG0nYB1_FT8XeETzTvXSrbyISWUYBW--jFP2qYXT7taH4096ZyeP0u1sd-i3GNGGgkTHhEJ_QaSKz0",
+            "primary": true
+          },
+          {
+            "id": 6,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": {
+        "en": "Tulip Mix Bouquet",
+        "az": "Lola Miks Buketi",
+        "ru": "Букет микс тюльпанов"
+      },
+      "price": 85000,
+      "discount": 0,
+      "rating": 4.3,
+      "reviewCount": 18,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuA76dreEvtVkbX5r4WdiI368YQ20F3Hg-eixeT9chIkwjAnnSk78NewyXLhB_RMoslnOt6OjezRroMhdoGm2mv_ATpAP3nJv8846rIGPWFLRrzFUzpphaxkFYfbZK3jiZwrFiP_N9f-r2CnSOEcbhcV9k5U-gcfsR4OUq5U_QYwOtvi16qc02oipPICQhbJhz7Gzvgj-1d6iUId94bW61mnrs58t8uhV20JMxsUgqMyRhpxxE4Ysd31jb5otRrEI2zQ_KTqiwxTPrJ0",
+      "stockQuantity": 40,
+      "companyId": 4,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "A cheerful mix of 15 colorful tulips in vibrant shades of red, pink, and yellow. Perfect for birthdays.",
+          "az": "15 rəngli lalənin şən qarışığı: qırmızı, çəhrayı və sarı canlı çalarlarda. Ad günləri üçün ideal.",
+          "ru": "Весёлый микс из 15 разноцветных тюльпанов в ярких оттенках красного, розового и жёлтого. Отлично для дней рождения."
+        },
+        "specifications": {
+          "en": [
+            "15 mixed tulips",
+            "3 colour varieties",
+            "Fresh cut",
+            "Vase life: 5-7 days"
+          ],
+          "az": [
+            "15 qarışıq lala",
+            "3 rəng çeşidi",
+            "Təzə kəsilmiş",
+            "Vaza ömrü: 5-7 gün"
+          ],
+          "ru": [
+            "15 смешанных тюльпанов",
+            "3 цветовых сорта",
+            "Свежесрезанные",
+            "Срок вазы: 5-7 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 7,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA76dreEvtVkbX5r4WdiI368YQ20F3Hg-eixeT9chIkwjAnnSk78NewyXLhB_RMoslnOt6OjezRroMhdoGm2mv_ATpAP3nJv8846rIGPWFLRrzFUzpphaxkFYfbZK3jiZwrFiP_N9f-r2CnSOEcbhcV9k5U-gcfsR4OUq5U_QYwOtvi16qc02oipPICQhbJhz7Gzvgj-1d6iUId94bW61mnrs58t8uhV20JMxsUgqMyRhpxxE4Ysd31jb5otRrEI2zQ_KTqiwxTPrJ0",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": {
+        "en": "Premium Mixed Bouquet",
+        "az": "Premium Qarışıq Buket",
+        "ru": "Премиум смешанный букет"
+      },
+      "price": 210000,
+      "discount": 0.05,
+      "rating": 4.7,
+      "reviewCount": 35,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGbFw2D-iGVr0uzcPWtJKPXd1j3dRQu2GgoETHpajTmN6OVvwl7CYFeDuhlVEkTVtvq4xZfvsqhIzbQNI4kNwb3JjxOzbP_AB0yZqlIjHdgueE3qbeqbNIVL77iuFcAqcU1j9jRqpyNOQDhNlP5zy8qEgyBSXN8nxmG0xXJFu-pObnEVgpBbzPhPwxptWLIQfWMv_NSjbe9JtMQuQGlZ8sWOxvfDUe60hY8CDeYQAz2rSUBPZQRRjaxqcQRorBT7Iw7AONS0uZ6dwj",
+      "stockQuantity": 15,
+      "companyId": 4,
+      "isNew": true,
+      "isBestSeller": true,
+      "category": "FLOWERS",
+      "detail": {
+        "description": {
+          "en": "An exquisite premium arrangement combining roses, orchids, and hydrangeas for a truly sophisticated look.",
+          "az": "Həqiqətən mürəkkəb bir görünüş üçün gül, orkide və hortenziyanı birləşdirən zərif premium düzülüş.",
+          "ru": "Изысканная премиум-аранжировка, сочетающая розы, орхидеи и гортензии для по-настоящему утончённого вида."
+        },
+        "specifications": {
+          "en": [
+            "Roses + orchids + hydrangeas",
+            "Premium ribbon bow",
+            "Luxury box packaging",
+            "Vase life: 7-10 days"
+          ],
+          "az": [
+            "Güllər + orkideyalar + hortenziyalar",
+            "Premium lent yay",
+            "Lüks qutu qablaşdırması",
+            "Vaza ömrü: 7-10 gün"
+          ],
+          "ru": [
+            "Розы + орхидеи + гортензии",
+            "Премиум бант с лентой",
+            "Роскошная коробка",
+            "Срок вазы: 7-10 дней"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 8,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGbFw2D-iGVr0uzcPWtJKPXd1j3dRQu2GgoETHpajTmN6OVvwl7CYFeDuhlVEkTVtvq4xZfvsqhIzbQNI4kNwb3JjxOzbP_AB0yZqlIjHdgueE3qbeqbNIVL77iuFcAqcU1j9jRqpyNOQDhNlP5zy8qEgyBSXN8nxmG0xXJFu-pObnEVgpBbzPhPwxptWLIQfWMv_NSjbe9JtMQuQGlZ8sWOxvfDUe60hY8CDeYQAz2rSUBPZQRRjaxqcQRorBT7Iw7AONS0uZ6dwj",
+            "primary": true
+          },
+          {
+            "id": 9,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3lbeb4OZQeNBxc9XjuwbBn9i7Os62vS71-3r4c_gY80jeKjsjyJY4l0uiYKb0CF0dNcWpT9wL8tuGtmg2ynVGFoR5BN4miyOuFncDoSue9KTs19fh1jyPS77ehD3Y3I38lnooutqqiLvUjzZRORICzejX5n9nLIWHSnioxkcU7p5LScY-7-aGqjOIYjWo7b3EcLykI-_ktUgVmgC5cEru2rnQ_H0wzokRqv-GtNArLxwatOYdrw8qC37wja12dBB_R3Zwybbus9bG",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": {
+        "en": "Chocolate Gift Set",
+        "az": "Şokoladlı Hədiyyə Dəsti",
+        "ru": "Шоколадный подарочный набор"
+      },
+      "price": 220000,
+      "discount": 0,
+      "rating": 4.6,
+      "reviewCount": 52,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC07PWV6nCyQYn2CO8IUgUILfMDfNQ1BHTY2P_iKTPPyvJbG9OFiQJWeoHlYchvWY4LLVvGxFtI73yZkXaaXeUa3b9cBjk5Q3fJn00uEOzOhEwSwuMuSugZNpu-_UqxSDc76dEbC8LTPBLxqZZgT-RtdsuTfhah1cdnegdMLOYHTofZWkwEBvomVIZwQzgqxCJo1XnPaEAXEWcjT616ku0Vd2PiWa8J4NCi52XIP32yGXuRONedvhS97lJh4N0AZBW1kNsyLu8iPq5Y",
+      "stockQuantity": 25,
+      "companyId": 2,
+      "isNew": false,
+      "isBestSeller": true,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "A curated selection of premium Belgian chocolates in an elegant gift box. Includes dark, milk, and white chocolate varieties.",
+          "az": "Zərif hədiyyə qutusunda premium Belçika şokoladlarının seçilmiş kolleksiyası. Qaranlıq, süd və ağ şokolad çeşidlərini əhatə edir.",
+          "ru": "Кураторская подборка премиальных бельгийских шоколадных конфет в элегантной подарочной коробке. Включает тёмный, молочный и белый шоколад."
+        },
+        "specifications": {
+          "en": [
+            "24 assorted Belgian chocolates",
+            "Dark, milk & white varieties",
+            "Decorative gift box",
+            "Net weight: 300g",
+            "Shelf life: 3 months"
+          ],
+          "az": [
+            "24 müxtəlif Belçika şokoladı",
+            "Qaranlıq, süd və ağ çeşidlər",
+            "Dekorativ hədiyyə qutusu",
+            "Xalis çəki: 300q",
+            "Yararlılıq müddəti: 3 ay"
+          ],
+          "ru": [
+            "24 ассорти бельгийских шоколада",
+            "Тёмные, молочные и белые сорта",
+            "Декоративная подарочная коробка",
+            "Вес нетто: 300г",
+            "Срок годности: 3 месяца"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 10,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC07PWV6nCyQYn2CO8IUgUILfMDfNQ1BHTY2P_iKTPPyvJbG9OFiQJWeoHlYchvWY4LLVvGxFtI73yZkXaaXeUa3b9cBjk5Q3fJn00uEOzOhEwSwuMuSugZNpu-_UqxSDc76dEbC8LTPBLxqZZgT-RtdsuTfhah1cdnegdMLOYHTofZWkwEBvomVIZwQzgqxCJo1XnPaEAXEWcjT616ku0Vd2PiWa8J4NCi52XIP32yGXuRONedvhS97lJh4N0AZBW1kNsyLu8iPq5Y",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": {
+        "en": "Birthday Gift Set",
+        "az": "Ad Günü Hədiyyə Dəsti",
+        "ru": "Набор на день рождения"
+      },
+      "price": 350000,
+      "discount": 0.1,
+      "rating": 4.4,
+      "reviewCount": 20,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDls4o2u1DBwNgY_NN1AdHmW6X84ljnpdHw69wFdkle6flIuiU_Z1yyaSRyEBpflLW616K4fgHQjahyZ5v2-lHMR5P4czkP7Y3hCbdA0jlWVP37QkYysB1-8aXefC6zbZY4wo2hkNABGpMtBX8u4hNMADwlt1dRCx7cRvamWak_MBXgM8mPT0Pkfg14lRNbT_KbWgCBkWxF4KOZ_1XQ9kPJ5s5H8RBhb-nELXOXp_eNKqa9e0cSexrvDJRE2dCK7BcCASjT1GI8pIr4",
+      "stockQuantity": 10,
+      "companyId": 2,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "The perfect birthday gift combining a small bouquet, chocolates, and a personalised birthday card in one beautiful package.",
+          "az": "Bir gözəl paketdə kiçik buket, şokoladlar və şəxsiləşdirilmiş doğum günü kartını birləşdirən mükəmməl doğum günü hədiyyəsi.",
+          "ru": "Идеальный подарок на день рождения, объединяющий небольшой букет, шоколад и именную открытку в одной красивой упаковке."
+        },
+        "specifications": {
+          "en": [
+            "Mini flower bouquet (5 roses)",
+            "Assorted chocolates 150g",
+            "Personalised birthday card",
+            "Gift ribbon wrap",
+            "Same-day delivery available"
+          ],
+          "az": [
+            "Mini çiçək buketi (5 gül)",
+            "Müxtəlif şokoladlar 150q",
+            "Şəxsiləşdirilmiş doğum günü kartı",
+            "Hədiyyə lentli bükülmüş",
+            "Eyni gün çatdırılması mövcuddur"
+          ],
+          "ru": [
+            "Мини-букет (5 роз)",
+            "Ассорти шоколада 150г",
+            "Именная открытка",
+            "Упаковка с лентой",
+            "Доставка в день заказа"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 11,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDls4o2u1DBwNgY_NN1AdHmW6X84ljnpdHw69wFdkle6flIuiU_Z1yyaSRyEBpflLW616K4fgHQjahyZ5v2-lHMR5P4czkP7Y3hCbdA0jlWVP37QkYysB1-8aXefC6zbZY4wo2hkNABGpMtBX8u4hNMADwlt1dRCx7cRvamWak_MBXgM8mPT0Pkfg14lRNbT_KbWgCBkWxF4KOZ_1XQ9kPJ5s5H8RBhb-nELXOXp_eNKqa9e0cSexrvDJRE2dCK7BcCASjT1GI8pIr4",
+            "primary": true
+          },
+          {
+            "id": 12,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC07PWV6nCyQYn2CO8IUgUILfMDfNQ1BHTY2P_iKTPPyvJbG9OFiQJWeoHlYchvWY4LLVvGxFtI73yZkXaaXeUa3b9cBjk5Q3fJn00uEOzOhEwSwuMuSugZNpu-_UqxSDc76dEbC8LTPBLxqZZgT-RtdsuTfhah1cdnegdMLOYHTofZWkwEBvomVIZwQzgqxCJo1XnPaEAXEWcjT616ku0Vd2PiWa8J4NCi52XIP32yGXuRONedvhS97lJh4N0AZBW1kNsyLu8iPq5Y",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": {
+        "en": "Premium Gift Box",
+        "az": "Premium Hədiyyə Qutusu",
+        "ru": "Премиум подарочная коробка"
+      },
+      "price": 480000,
+      "discount": 0.15,
+      "rating": 4.5,
+      "reviewCount": 12,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIrWjfsgDRVQC9WVyDasJDd9CICBPTfji6bx7_XN36VuAjd2MwDq9zaW_fXoTLRiMC0y2PDUxEJwnAF5hfR-C-bHlbxUjozVszz1eIH2bLHw7n57oJ9ELR04YM55Z4hV7WRwDNDQWKLs8n5DPp5n6azceCuvO1Q7J9n23yQBlyfpOrTcNBHclZ3XSIz7Uj7oWcTi3NBQBBKkLI4cKBb8NI1bK9wPz3dpZVXPcUTDLpo4K3aZol_eutZrHsEqqbVN_iP5kCjdMi0NyS",
+      "stockQuantity": 8,
+      "companyId": 2,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "An opulent gift box featuring artisan chocolates, dried fruit, nuts, and a handcrafted candle — luxury in every detail.",
+          "az": "Əl ilə hazırlanmış şokoladlar, qurudulmuş meyvələr, qoz-fındıq və əl ilə hazırlanmış şamdan ibarət zəngin hədiyyə qutusu — hər detalda lüks.",
+          "ru": "Роскошная подарочная коробка с авторскими шоколадными конфетами, сухофруктами, орехами и ручной свечой — роскошь в каждой детали."
+        },
+        "specifications": {
+          "en": [
+            "Artisan chocolates 200g",
+            "Dried fruits & nuts mix",
+            "Handcrafted soy candle",
+            "Premium wooden box",
+            "Custom ribbon & card"
+          ],
+          "az": [
+            "Əl işi şokoladlar 200q",
+            "Qurudulmuş meyvə və qoz qarışığı",
+            "Əl ilə hazırlanmış soya şamı",
+            "Premium taxta qutu",
+            "Xüsusi lent və kart"
+          ],
+          "ru": [
+            "Авторский шоколад 200г",
+            "Микс сухофруктов и орехов",
+            "Соевая свеча ручной работы",
+            "Деревянная коробка премиум",
+            "Лента и открытка на заказ"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 13,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIrWjfsgDRVQC9WVyDasJDd9CICBPTfji6bx7_XN36VuAjd2MwDq9zaW_fXoTLRiMC0y2PDUxEJwnAF5hfR-C-bHlbxUjozVszz1eIH2bLHw7n57oJ9ELR04YM55Z4hV7WRwDNDQWKLs8n5DPp5n6azceCuvO1Q7J9n23yQBlyfpOrTcNBHclZ3XSIz7Uj7oWcTi3NBQBBKkLI4cKBb8NI1bK9wPz3dpZVXPcUTDLpo4K3aZol_eutZrHsEqqbVN_iP5kCjdMi0NyS",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": {
+        "en": "Honey & Jam Collection",
+        "az": "Bal və Mürəbbə Kolleksiyası",
+        "ru": "Коллекция мёда и варенья"
+      },
+      "price": 180000,
+      "discount": 0,
+      "rating": 4.2,
+      "reviewCount": 30,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuANlEHokV9zcqZJy6eriNN3IcYBZ4uAL5ssiHtVVQoQ4sBXc5vf2kFsttAKxe5wWJ54hIhGNFkUy8sF2qiyRpKJZ0urr0G8xNUPVboLr4UDe-Fz-E8DHWa05EXAqu0ColxXXX9Tz2jLGNDZRhe63J-QS7gxqUOavpVCl6775LYGmnFX_UAzt3Cv2Kpu7k-AhmVi6dydrzp6Ck9X_zJ4VnGzbsQlfVbyaZVY1MYdO8rw5SJi6qPscYlhsqEc3GLs_JnW8iZp7g6YifVs",
+      "stockQuantity": 30,
+      "companyId": 2,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "A delightful set of 4 artisan jars: wildflower honey, rose petal jam, apricot preserves, and mulberry syrup.",
+          "az": "4 əl işi qabdan ibarət gözəl dəst: vəhşi çiçək balı, qızılgül ləçəyi mürəbbəsi, ərik konservası və tut şərbəti.",
+          "ru": "Восхитительный набор из 4 авторских банок: мёд из диких цветов, варенье из лепестков роз, абрикосовое варенье и шелковичный сироп."
+        },
+        "specifications": {
+          "en": [
+            "4 x 200ml artisan jars",
+            "No artificial preservatives",
+            "Locally sourced ingredients",
+            "Beautiful wicker basket"
+          ],
+          "az": [
+            "4 x 200ml əl işi qab",
+            "Süni konservant yoxdur",
+            "Yerli mənşəli inqrediyentlər",
+            "Gözəl söyüd zənbili"
+          ],
+          "ru": [
+            "4 × 200мл авторских банок",
+            "Без искусственных консервантов",
+            "Местные ингредиенты",
+            "Красивая плетёная корзина"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 14,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuANlEHokV9zcqZJy6eriNN3IcYBZ4uAL5ssiHtVVQoQ4sBXc5vf2kFsttAKxe5wWJ54hIhGNFkUy8sF2qiyRpKJZ0urr0G8xNUPVboLr4UDe-Fz-E8DHWa05EXAqu0ColxXXX9Tz2jLGNDZRhe63J-QS7gxqUOavpVCl6775LYGmnFX_UAzt3Cv2Kpu7k-AhmVi6dydrzp6Ck9X_zJ4VnGzbsQlfVbyaZVY1MYdO8rw5SJi6qPscYlhsqEc3GLs_JnW8iZp7g6YifVs",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": {
+        "en": "Anniversary Gift Set",
+        "az": "İllik Toy Hədiyyə Dəsti",
+        "ru": "Набор на годовщину"
+      },
+      "price": 650000,
+      "discount": 0,
+      "rating": 4.7,
+      "reviewCount": 8,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW",
+      "stockQuantity": 5,
+      "companyId": 2,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "The ultimate anniversary gift: a curated box with champagne, premium chocolates, rose petals, and a personalised keepsake.",
+          "az": "Ən yaxşı ildönümü hədiyyəsi: şampan, premium şokoladlar, qızılgül ləçəkləri və şəxsiləşdirilmiş xatirə əşyası ilə kurasiya edilmiş qutu.",
+          "ru": "Идеальный подарок на годовщину: курированная коробка с шампанским, шоколадом, лепестками роз и именным сувениром."
+        },
+        "specifications": {
+          "en": [
+            "Mini champagne bottle 200ml",
+            "Premium chocolates 250g",
+            "Rose petals mix",
+            "Personalised wooden keepsake",
+            "Luxury black gift box"
+          ],
+          "az": [
+            "Mini şampan şüşəsi 200ml",
+            "Premium şokoladlar 250q",
+            "Qızılgül ləçəkləri qarışığı",
+            "Şəxsiləşdirilmiş taxta xatirə əşyası",
+            "Lüks qara hədiyyə qutusu"
+          ],
+          "ru": [
+            "Мини-бутылка шампанского 200мл",
+            "Шоколад премиум 250г",
+            "Микс лепестков роз",
+            "Именной деревянный сувенир",
+            "Роскошная чёрная подарочная коробка"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 15,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW",
+            "primary": true
+          },
+          {
+            "id": 16,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIrWjfsgDRVQC9WVyDasJDd9CICBPTfji6bx7_XN36VuAjd2MwDq9zaW_fXoTLRiMC0y2PDUxEJwnAF5hfR-C-bHlbxUjozVszz1eIH2bLHw7n57oJ9ELR04YM55Z4hV7WRwDNDQWKLs8n5DPp5n6azceCuvO1Q7J9n23yQBlyfpOrTcNBHclZ3XSIz7Uj7oWcTi3NBQBBKkLI4cKBb8NI1bK9wPz3dpZVXPcUTDLpo4K3aZol_eutZrHsEqqbVN_iP5kCjdMi0NyS",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": {
+        "en": "Chocolate Layer Cake",
+        "az": "Şokoladlı Qatlı Tort",
+        "ru": "Шоколадный слоёный торт"
+      },
+      "price": 280000,
+      "discount": 0,
+      "rating": 4.8,
+      "reviewCount": 40,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+      "stockQuantity": 15,
+      "companyId": 3,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "BAKERY",
+      "detail": {
+        "description": {
+          "en": "A decadent 3-layer chocolate cake with Belgian chocolate ganache and fresh raspberry compote. Made to order.",
+          "az": "Belçika şokolad qanajı və təzə moruq kompotu ilə 3 qatlı dekadent şokolad tortu. Sifarişlə hazırlanır.",
+          "ru": "Декадентский 3-слойный шоколадный торт с бельгийским шоколадным ганашем и свежим малиновым компотом. Готовится на заказ."
+        },
+        "specifications": {
+          "en": [
+            "3-layer moist sponge",
+            "Belgian dark chocolate ganache",
+            "Fresh raspberry compote",
+            "Serves 8-10 people",
+            "Available in custom sizes",
+            "Order 24h in advance"
+          ],
+          "az": [
+            "3 qatlı nəm biskvit",
+            "Belçika qaranlıq şokolad qanajı",
+            "Təzə moruq kompotu",
+            "8-10 nəfərə hesablanmış",
+            "Fərdi ölçülərdə mövcuddur",
+            "24 saat əvvəl sifariş"
+          ],
+          "ru": [
+            "3 слоя влажного бисквита",
+            "Ганаш из тёмного бельгийского шоколада",
+            "Свежий малиновый компот",
+            "На 8-10 человек",
+            "Доступны нестандартные размеры",
+            "Заказ за 24ч"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 18,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+            "primary": true
+          },
+          {
+            "id": 19,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDIN38nno1LALRalCHfybqCYib018UCs87tAcf74CehrHmQ62yHWSxvrIWxaIttTdq-IFMqBmzN_M-zkUxfvjeGHVpI_8PCKWDaTWCtza_GuE78Ba8D5sVe_M1LkqxyiQN8koV6xKJzDeOtb8E_rowIC06WVxMNCCqTCMaG-AVys4OdCeBRLD7bEY7yzFeFiwA5-V_tpbsCNyRkgVfQ4WJg3b-ZZrWZDj5OiZpYkU4XKA5lgak7IPAom2Vn9gIzQPpkexr2r7yJ6hJp",
+            "primary": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": {
+        "en": "Cupcake Collection",
+        "az": "Kapkeys Kolleksiyası",
+        "ru": "Коллекция капкейков"
+      },
+      "price": 120000,
+      "discount": 0.08,
+      "rating": 4.4,
+      "reviewCount": 22,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU",
+      "stockQuantity": 45,
+      "companyId": 3,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "BAKERY",
+      "detail": {
+        "description": {
+          "en": "A box of 6 beautifully decorated cupcakes with fluffy buttercream frosting in seasonal flavours.",
+          "az": "Mövsüm ləzzətlərində qabartmalı yağ kremi bəzəyi ilə 6 gözəl bəzədilmiş kapkeysdən ibarət qutu.",
+          "ru": "Коробка из 6 красиво украшенных капкейков с пышным масляным кремом в сезонных вкусах."
+        },
+        "specifications": {
+          "en": [
+            "6 cupcakes per box",
+            "Fluffy buttercream frosting",
+            "Seasonal flavour rotation",
+            "Gluten-free option available",
+            "Shelf life: 2 days"
+          ],
+          "az": [
+            "Qutuda 6 kapkeys",
+            "Qabartmalı yağ kremi bəzəyi",
+            "Mövsümlük ləzzət rotasiyası",
+            "Glutensiz seçim mövcuddur",
+            "Yararlılıq müddəti: 2 gün"
+          ],
+          "ru": [
+            "6 капкейков в коробке",
+            "Пышный масляный крем",
+            "Сезонная ротация вкусов",
+            "Вариант без глютена",
+            "Срок хранения: 2 дня"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 20,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": {
+        "en": "Meringue Dessert Set",
+        "az": "Merengi Desert Dəsti",
+        "ru": "Набор десертов меренга"
+      },
+      "price": 95000,
+      "discount": 0,
+      "rating": 4.3,
+      "reviewCount": 16,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuB62QMuVtbDm49fs3Mbf_tYN0o3DxZ_77wcjZHDHBV_7uNXTr6ztlNx3wxy2Z6stG2lvpDEi6AEJsTleBVHH7NNHnX-GwffqqzmJw45lVSoGScbvac00N0KpPd-zW3FzmO_rpkcuJsosm845i-EdA-8qVEjTtOTxLJr-3EOBXUu4prNorZPnz-VQKilMZpXQDAsxNM2wGo0HcrEi3Gh3h3TclbGHsJVDXk2Yuxu8JjdHGaLN_VPYbwwsAPg25bFX_vY6T-G_OfMSZTh",
+      "stockQuantity": 30,
+      "companyId": 3,
+      "isNew": false,
+      "isBestSeller": false,
+      "category": "BAKERY",
+      "detail": {
+        "description": {
+          "en": "A charming set of 10 hand-piped meringue kisses in pastel colours, lightly flavoured with vanilla and rose water.",
+          "az": "Vanil və gülab suyu ilə yüngülcə ətirli pastel rənglərdə 10 əl ilə qablaşdırılmış merengi öpüşündən ibarət şirin dəst.",
+          "ru": "Очаровательный набор из 10 безе ручного приготовления в пастельных тонах, с лёгким ароматом ванили и розовой воды."
+        },
+        "specifications": {
+          "en": [
+            "10 meringue kisses",
+            "Pastel colour assortment",
+            "Vanilla & rose water flavours",
+            "Crispy outside, chewy inside",
+            "Shelf life: 1 week"
+          ],
+          "az": [
+            "10 ədəd merengi öpüşü",
+            "Pastel rəng çeşidi",
+            "Vanil və gülab suyu ləzzətləri",
+            "Xaricdən xırtıldayan, içindən çeynənən",
+            "Yararlılıq müddəti: 1 həftə"
+          ],
+          "ru": [
+            "10 безе-поцелуйчиков",
+            "Пастельный цветовой ассортимент",
+            "Вкусы ванили и розовой воды",
+            "Хрустящие снаружи, тянучие внутри",
+            "Срок хранения: 1 неделя"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 21,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuB62QMuVtbDm49fs3Mbf_tYN0o3DxZ_77wcjZHDHBV_7uNXTr6ztlNx3wxy2Z6stG2lvpDEi6AEJsTleBVHH7NNHnX-GwffqqzmJw45lVSoGScbvac00N0KpPd-zW3FzmO_rpkcuJsosm845i-EdA-8qVEjTtOTxLJr-3EOBXUu4prNorZPnz-VQKilMZpXQDAsxNM2wGo0HcrEi3Gh3h3TclbGHsJVDXk2Yuxu8JjdHGaLN_VPYbwwsAPg25bFX_vY6T-G_OfMSZTh",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": {
+        "en": "Cinnamon Roll Bundle",
+        "az": "Darçınlı Rulonlar Dəsti",
+        "ru": "Набор булочек с корицей"
+      },
+      "price": 110000,
+      "discount": 0,
+      "rating": 4.6,
+      "reviewCount": 33,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+      "stockQuantity": 20,
+      "companyId": 3,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "BAKERY",
+      "detail": {
+        "description": {
+          "en": "4 freshly baked cinnamon rolls with cream cheese icing, served warm. The perfect cozy treat.",
+          "az": "Krem pendiri glazeli 4 təzə bişirilmiş darçınlı rulon, isti servis edilir. Mükəmməl rahat qonaqlıq.",
+          "ru": "4 свежеиспечённых булочки с корицей под глазурью из сливочного сыра, подаются тёплыми. Идеальное уютное лакомство."
+        },
+        "specifications": {
+          "en": [
+            "4 freshly baked rolls",
+            "Cream cheese icing",
+            "Ceylon cinnamon",
+            "Best served warm",
+            "Shelf life: 1 day"
+          ],
+          "az": [
+            "4 ədəd təzə bişirilmiş rulon",
+            "Krem pendiri glazeli",
+            "Seylon darçını",
+            "İsti servis edilmesi tövsiyə olunur",
+            "Yararlılıq müddəti: 1 gün"
+          ],
+          "ru": [
+            "4 свежеиспечённые булочки",
+            "Глазурь из сливочного сыра",
+            "Корица Цейлон",
+            "Рекомендуется подавать тёплыми",
+            "Срок хранения: 1 день"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 22,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": {
+        "en": "Luxury Flower & Sweet Hamper",
+        "az": "Lüks Gül və Şirniyyat Hədiyyə Səbəti",
+        "ru": "Люксовая корзина с цветами и сладостями"
+      },
+      "price": 550000,
+      "discount": 0.1,
+      "rating": 4.9,
+      "reviewCount": 11,
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+      "stockQuantity": 7,
+      "companyId": 2,
+      "isNew": true,
+      "isBestSeller": false,
+      "category": "GIFTS",
+      "detail": {
+        "description": {
+          "en": "The ultimate combo hamper: a hand-tied bouquet of premium roses paired with artisan chocolates and fresh macarons in a wicker basket.",
+          "az": "Ən yaxşı kombo zənbil: söyüd zənbilində əl bağlı premium güllər buketi, əl işi şokoladlar və təzə makaronlarla cütləşdirilmişdir.",
+          "ru": "Идеальная комбо-корзина: букет с вязкой из премиальных роз в сочетании с авторскими шоколадными конфетами и свежими макарон в плетёной корзине."
+        },
+        "specifications": {
+          "en": [
+            "Hand-tied rose bouquet (15 roses)",
+            "Belgian chocolates 150g",
+            "Fresh macarons box of 6",
+            "Premium wicker hamper basket",
+            "Personalised gift card"
+          ],
+          "az": [
+            "Əl bağlı gül buketi (15 gül)",
+            "Belçika şokoladları 150q",
+            "Təzə makaronlar qutusu 6 ədəd",
+            "Premium söyüd zənbili",
+            "Şəxsiləşdirilmiş hədiyyə kartı"
+          ],
+          "ru": [
+            "Букет роз ручной вязки (15 роз)",
+            "Бельгийский шоколад 150г",
+            "Коробка маcarons (6 шт)",
+            "Плетёная корзина премиум",
+            "Именная открытка"
+          ]
+        },
+        "status": "ACTIVE",
+        "available": true,
+        "media": [
+          {
+            "id": 23,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+            "primary": true
+          },
+          {
+            "id": 24,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC07PWV6nCyQYn2CO8IUgUILfMDfNQ1BHTY2P_iKTPPyvJbG9OFiQJWeoHlYchvWY4LLVvGxFtI73yZkXaaXeUa3b9cBjk5Q3fJn00uEOzOhEwSwuMuSugZNpu-_UqxSDc76dEbC8LTPBLxqZZgT-RtdsuTfhah1cdnegdMLOYHTofZWkwEBvomVIZwQzgqxCJo1XnPaEAXEWcjT616ku0Vd2PiWa8J4NCi52XIP32yGXuRONedvhS97lJh4N0AZBW1kNsyLu8iPq5Y",
+            "primary": false
+          },
+          {
+            "id": 25,
+            "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDIN38nno1LALRalCHfybqCYib018UCs87tAcf74CehrHmQ62yHWSxvrIWxaIttTdq-IFMqBmzN_M-zkUxfvjeGHVpI_8PCKWDaTWCtza_GuE78Ba8D5sVe_M1LkqxyiQN8koV6xKJzDeOtb8E_rowIC06WVxMNCCqTCMaG-AVys4OdCeBRLD7bEY7yzFeFiwA5-V_tpbsCNyRkgVfQ4WJg3b-ZZrWZDj5OiZpYkU4XKA5lgak7IPAom2Vn9gIzQPpkexr2r7yJ6hJp",
+            "primary": false
+          }
+        ]
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "recipientName": "Alisher Toshmatov",
+      "recipientPhone": "+998901234567",
+      "deliveryAddress": "Toshkent sh., Mirzo Ulugbek tumani, Mustaqillik kochasi 12",
+      "latitude": 41.2995,
+      "longitude": 69.2401,
+      "deliveryDate": "2026-05-10T14:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "Iltimos, qongiroq qiling",
+      "status": "COMPLETED",
+      "totalAmount": 469800,
+      "items": [
+        {
+          "id": 1,
+          "productId": 1,
+          "productName": "Rose Magic Bouquet",
+          "productImageUrl": "https://images.unsplash.com/photo-1555955775-2f8e4d5e48c3?auto=format&fit=crop&q=80&w=400",
+          "productPrice": 390000,
+          "productDiscount": 0.13,
+          "quantity": 1,
+          "subtotal": 339300
+        },
+        {
+          "id": 2,
+          "productId": 3,
+          "productName": "White Lily Bouquet",
+          "productImageUrl": "https://images.unsplash.com/photo-1490750967868-88df5691cc4b?auto=format&fit=crop&q=80&w=400",
+          "productPrice": 145000,
+          "productDiscount": 0.1,
+          "quantity": 1,
+          "subtotal": 130500
+        }
+      ],
+      "createdAt": "2026-05-08T09:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "recipientName": "Dilnoza Yusupova",
+      "recipientPhone": "+998909876543",
+      "deliveryAddress": "Toshkent sh., Yunusobod tumani, Amir Temur kochasi 5",
+      "latitude": 41.3123,
+      "longitude": 69.28,
+      "deliveryDate": "2026-05-14T11:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "",
+      "status": "IN_DELIVERY",
+      "totalAmount": 240000,
+      "items": [
+        {
+          "id": 3,
+          "productId": 2,
+          "productName": "Red Roses Bundle",
+          "productImageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=400",
+          "productPrice": 120000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 240000
+        }
+      ],
+      "createdAt": "2026-05-13T15:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "recipientName": "Bobur Karimov",
+      "recipientPhone": "+998911112233",
+      "deliveryAddress": "",
+      "latitude": 0,
+      "longitude": 0,
+      "deliveryDate": "2026-05-16T10:00:00.000Z",
+      "deliveryType": "PICKUP",
+      "comment": "Chiroyli orashn",
+      "status": "PREPARING",
+      "totalAmount": 450000,
+      "items": [
+        {
+          "id": 4,
+          "productId": 5,
+          "productName": "Tulip Season Mix",
+          "productImageUrl": "https://images.unsplash.com/photo-1490750967868-88df5691cc4b?auto=format&fit=crop&q=80&w=400",
+          "productPrice": 90000,
+          "productDiscount": 0,
+          "quantity": 5,
+          "subtotal": 450000
+        }
+      ],
+      "createdAt": "2026-05-16T08:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "recipientName": "sfd",
+      "recipientPhone": "=998979997969",
+      "deliveryAddress": "",
+      "latitude": 41.2995,
+      "longitude": 69.2401,
+      "deliveryDate": "2026-05-21",
+      "deliveryType": "DELIVERY",
+      "comment": "sadfasdf",
+      "status": "ACCEPTED",
+      "totalAmount": 220000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 16,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+          "productPrice": 110000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 220000
+        }
+      ],
+      "createdAt": "2026-05-16T16:42:27.155Z"
+    },
+    {
+      "id": 5,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "41.31111, 69.27975",
+      "latitude": 41.3111139989405,
+      "longitude": 69.27975296974184,
+      "deliveryDate": "2026-05-29T10:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "olaala bulalala",
+      "status": "IN_DELIVERY",
+      "totalAmount": 1210000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 16,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+          "productPrice": 110000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 220000
+        },
+        {
+          "id": 2,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 2,
+          "subtotal": 990000
+        }
+      ],
+      "createdAt": "2026-05-16T17:20:44.797Z"
+    },
+    {
+      "id": 6,
+      "recipientName": "sfasdf",
+      "recipientPhone": "+998223432423",
+      "deliveryAddress": "41.31110, 69.27989",
+      "latitude": 41.311097881306445,
+      "longitude": 69.27989244461061,
+      "deliveryDate": "2026-06-05T04:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "safasdfa",
+      "status": "PREPARING",
+      "totalAmount": 1210000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 2,
+          "subtotal": 990000
+        },
+        {
+          "id": 2,
+          "productId": 16,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+          "productPrice": 110000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 220000
+        }
+      ],
+      "createdAt": "2026-05-17T06:17:21.187Z"
+    },
+    {
+      "id": 7,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998999999999",
+      "deliveryAddress": "41.31108, 69.25970",
+      "latitude": 41.31108176366843,
+      "longitude": 69.2597007751465,
+      "deliveryDate": "3232-02-23T10:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "2323",
+      "status": "PREPARING",
+      "totalAmount": 495000,
+      "items": [
+        {
+          "id": 2,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 1,
+          "subtotal": 495000
+        }
+      ],
+      "createdAt": "2026-05-17T06:31:32.513Z"
+    },
+    {
+      "id": 8,
+      "recipientName": "jfsjdfklsjdf",
+      "recipientPhone": "+998979999999",
+      "deliveryAddress": "41.30360, 69.25232",
+      "latitude": 41.30360274975627,
+      "longitude": 69.25231933593751,
+      "deliveryDate": "2026-05-29T04:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "iygyufy fyh ghj ghl",
+      "status": "COMPLETED",
+      "totalAmount": 990000,
+      "items": [
+        {
+          "id": 2,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 2,
+          "subtotal": 990000
+        }
+      ],
+      "createdAt": "2026-05-17T08:38:07.137Z"
+    },
+    {
+      "id": 9,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "41.30850, 69.27498",
+      "latitude": 41.308502890261764,
+      "longitude": 69.27497863769533,
+      "deliveryDate": "2026-05-17T07:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "ijijijiji",
+      "status": "PREPARING",
+      "totalAmount": 1300000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 11,
+          "productName": "Anniversary Gift Set",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW",
+          "productPrice": 650000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 1300000
+        }
+      ],
+      "createdAt": "2026-05-17T09:06:54.140Z"
+    },
+    {
+      "id": 10,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "41.30438, 69.26949",
+      "latitude": 41.30437648063362,
+      "longitude": 69.26948547363283,
+      "deliveryDate": "2026-05-17T04:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "ijijijijijijiji",
+      "status": "IN_DELIVERY",
+      "totalAmount": 1485000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 3,
+          "subtotal": 1485000
+        }
+      ],
+      "createdAt": "2026-05-17T09:54:17.677Z"
+    },
+    {
+      "id": 11,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "",
+      "latitude": 0,
+      "longitude": 0,
+      "deliveryDate": "2026-05-17T04:00:00.000Z",
+      "deliveryType": "PICKUP",
+      "comment": "jfsakdjfk",
+      "status": "COMPLETED",
+      "totalAmount": 441600,
+      "items": [
+        {
+          "id": 1,
+          "productId": 14,
+          "productName": "Cupcake Collection",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU",
+          "productPrice": 120000,
+          "productDiscount": 0.08,
+          "quantity": 4,
+          "subtotal": 441600
+        }
+      ],
+      "createdAt": "2026-05-17T09:59:20.219Z"
+    },
+    {
+      "id": 12,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "",
+      "latitude": 0,
+      "longitude": 0,
+      "deliveryDate": "2026-05-17T04:00:00.000Z",
+      "deliveryType": "PICKUP",
+      "comment": "lets go",
+      "status": "COMPLETED",
+      "totalAmount": 1950000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 11,
+          "productName": "Anniversary Gift Set",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW",
+          "productPrice": 650000,
+          "productDiscount": 0,
+          "quantity": 3,
+          "subtotal": 1950000
+        }
+      ],
+      "createdAt": "2026-05-17T10:12:51.033Z"
+    },
+    {
+      "id": 13,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "41.30953, 69.25713",
+      "latitude": 41.30953445186554,
+      "longitude": 69.2571258544922,
+      "deliveryDate": "2026-05-17T04:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "Test 123",
+      "status": "COMPLETED",
+      "totalAmount": 1210000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 2,
+          "subtotal": 990000
+        },
+        {
+          "id": 2,
+          "productId": 16,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq",
+          "productPrice": 110000,
+          "productDiscount": 0,
+          "quantity": 2,
+          "subtotal": 220000
+        }
+      ],
+      "createdAt": "2026-05-17T12:05:15.515Z"
+    },
+    {
+      "id": 14,
+      "recipientName": "Mirsaid",
+      "recipientPhone": "+998979997969",
+      "deliveryAddress": "41.29509, 69.23962",
+      "latitude": 41.2950911041947,
+      "longitude": 69.23961639404298,
+      "deliveryDate": "2026-06-26T04:00:00.000Z",
+      "deliveryType": "DELIVERY",
+      "comment": "sdf",
+      "status": "ACCEPTED",
+      "totalAmount": 990000,
+      "items": [
+        {
+          "id": 1,
+          "productId": 17,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV",
+          "productPrice": 550000,
+          "productDiscount": 0.1,
+          "quantity": 2,
+          "subtotal": 990000
+        }
+      ],
+      "createdAt": "2026-06-17T00:48:58.139Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "type": "ORDER_STATUS",
+      "orderId": 2,
+      "orderItems": [
+        {
+          "id": 3,
+          "productName": "Red Roses Bundle",
+          "productImageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=400"
+        }
+      ],
+      "status": "IN_DELIVERY",
+      "isRead": false,
+      "createdAt": "2026-05-13T16:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "type": "ORDER_STATUS",
+      "orderId": 3,
+      "orderItems": [
+        {
+          "id": 4,
+          "productName": "Tulip Season Mix",
+          "productImageUrl": "https://images.unsplash.com/photo-1490750967868-88df5691cc4b?auto=format&fit=crop&q=80&w=400"
+        }
+      ],
+      "status": "PREPARING",
+      "isRead": true,
+      "createdAt": "2026-05-16T09:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "type": "ORDER_STATUS",
+      "orderId": 1,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Rose Magic Bouquet",
+          "productImageUrl": "https://images.unsplash.com/photo-1555955775-2f8e4d5e48c3?auto=format&fit=crop&q=80&w=400"
+        },
+        {
+          "id": 2,
+          "productName": "White Lily Bouquet",
+          "productImageUrl": "https://images.unsplash.com/photo-1490750967868-88df5691cc4b?auto=format&fit=crop&q=80&w=400"
+        }
+      ],
+      "status": "COMPLETED",
+      "isRead": true,
+      "createdAt": "2026-05-08T11:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "type": "PRODUCT_REVIEW",
+      "orderId": 1,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Rose Magic Bouquet",
+          "productImageUrl": "https://images.unsplash.com/photo-1555955775-2f8e4d5e48c3?auto=format&fit=crop&q=80&w=400"
+        }
+      ],
+      "productId": 1,
+      "isRead": true,
+      "createdAt": "2026-05-09T08:00:00.000Z"
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 5,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq"
+        },
+        {
+          "id": 2,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        }
+      ],
+      "status": "IN_DELIVERY",
+      "isRead": true,
+      "createdAt": "2026-05-16T22:02:27.554Z",
+      "id": 5
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 8,
+      "orderItems": [
+        {
+          "id": 2,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        }
+      ],
+      "status": "COMPLETED",
+      "isRead": true,
+      "createdAt": "2026-05-17T08:47:55.776Z",
+      "id": 6
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 10,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        }
+      ],
+      "status": "IN_DELIVERY",
+      "isRead": false,
+      "createdAt": "2026-05-17T09:54:50.482Z",
+      "id": 7
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 11,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Cupcake Collection",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU"
+        }
+      ],
+      "status": "COMPLETED",
+      "isRead": true,
+      "createdAt": "2026-05-17T10:00:13.072Z",
+      "id": 8
+    },
+    {
+      "type": "PRODUCT_REVIEW",
+      "orderId": 11,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Cupcake Collection",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsJ6PetLi2dVejRx0nUuafYbfOaT0ZVZqNuBSDfMGAmZho81NLc7040jWmWUQ0lVEB5CnEK3LToa0Ft3BUZWtBOhIHPDtAh10jmy0B9bVZm2bSwdwpTjYskk32kjaGrkuzgFP3hvElHhwMHUx1vPWIN7ZtgAW4HK94sbaJ-fgxhZ39FFpREPszI63QHBQ8TAJO1U_Mr8GMD3EdWYW17BxRqrwo5qaMz8akr3XBBNlpHDY6zZ8jDQvglBvAiAEzuIcFMCLQor0gk0cU"
+        }
+      ],
+      "productId": 14,
+      "isRead": true,
+      "createdAt": "2026-05-17T10:00:13.085Z",
+      "id": 9
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 12,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Anniversary Gift Set",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW"
+        }
+      ],
+      "status": "PREPARING",
+      "isRead": true,
+      "createdAt": "2026-05-17T10:13:30.692Z",
+      "id": 10
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 12,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Anniversary Gift Set",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuATUKQdwJE0heStyU654XbQMecCoQco3EombsjIx8ERe-DYTYBFAFxLW03agZFNP7IDTEJgw1UzE1O_NiaiEdKLowoq1Ju5pgpj61LqCksrGxcVy7-k9NcR_lLDEsz2XeG3K9makZ-RKBCPon3X1gLwDPzJuHxxcc_Ht-TiHwZBIfwQ0AojXx2rQ0ZHnMddB1Mp_AIiLkUAwjfWWQS-M08cYJgbrMB4ud_gTsE47YYNOtJe0i1qHbtQnHYv6vncaILf1sOpizNzyYbW"
+        }
+      ],
+      "status": "COMPLETED",
+      "isRead": true,
+      "createdAt": "2026-05-17T10:14:14.750Z",
+      "id": 11
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 13,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        },
+        {
+          "id": 2,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq"
+        }
+      ],
+      "status": "PREPARING",
+      "isRead": true,
+      "createdAt": "2026-05-17T12:06:42.653Z",
+      "id": 13
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 13,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        },
+        {
+          "id": 2,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq"
+        }
+      ],
+      "status": "IN_DELIVERY",
+      "isRead": false,
+      "createdAt": "2026-05-17T12:07:10.440Z",
+      "id": 14
+    },
+    {
+      "type": "ORDER_STATUS",
+      "orderId": 13,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        },
+        {
+          "id": 2,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq"
+        }
+      ],
+      "status": "COMPLETED",
+      "isRead": true,
+      "createdAt": "2026-05-17T12:07:29.163Z",
+      "id": 15
+    },
+    {
+      "type": "PRODUCT_REVIEW",
+      "orderId": 13,
+      "orderItems": [
+        {
+          "id": 1,
+          "productName": "Luxury Flower & Sweet Hamper",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5b4Yg_lk66dJt3NgunPmDXrpwXtdDW8iVyxCZogO4DtRAAn3FpU7sH5UDe8pCxf5zjVNZIvOY3BMlAas2kf4lNrQflvgNu4xYdQtzJ7rNYMMi72kTwWenmMzrkuNp51B4Ng_Gi1wnyAnwNHPVpMdE26fxl93B6v8Udo5lli3l7YV1BdzSEXR5Y3NJrFTV9sz2z0vaQyN2MPJ3WBzWpYskpMoAwyDZq8lIBZVGjoB_y7732XCzE1zW5YVr7-6ted1_WBqCUFN9xgLV"
+        }
+      ],
+      "productId": 17,
+      "isRead": false,
+      "createdAt": "2026-05-17T12:07:29.178Z",
+      "id": 16
+    },
+    {
+      "type": "PRODUCT_REVIEW",
+      "orderId": 13,
+      "orderItems": [
+        {
+          "id": 2,
+          "productName": "Cinnamon Roll Bundle",
+          "productImageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuACRxVB7EFr1OablhFXuxCyfMoPaUbh8SvZWTlqyVEBjncf8Iiixw6Wgryo2YH1ciKDGlGcHURhm-S8fpgLaVhh75K0NqfuPEIN6FUxcWgaLAF0yjXG3gvLK532r--Iuy4lkth1DEkMfGd7XMmdR9n4yxuIGz3sm53oQwPbYzA6Uwmt-Wn1uBC7go9cfqELKd1Aa0UG12nrQKLJf4Bs6dNb5Xdv2KaeJbHvI3FuBjdEkcd0zH8vrRverFJEzeTAPDmvvANiBwahEVNq"
+        }
+      ],
+      "productId": 16,
+      "isRead": false,
+      "createdAt": "2026-05-17T12:07:29.191Z",
+      "id": 17
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "productId": 1,
+      "content": "Juda chiroyli gul, o'z vaqtida yetkazib berildi!",
+      "userId": 123,
+      "username": "sarvar_uz",
+      "userAvatar": "",
+      "commentDate": "2026-05-10T14:30:00.000Z",
+      "rating": 5,
+      "likesCount": 8,
+      "dislikesCount": 0
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "content": "Sifat yaxshi, lekin narxi biroz qimmatroq.",
+      "userId": 124,
+      "username": "dilnoza_m",
+      "userAvatar": "",
+      "commentDate": "2026-05-08T10:15:00.000Z",
+      "rating": 4,
+      "likesCount": 3,
+      "dislikesCount": 1
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "content": "Ajoyib tort! Hammasi mazali va chiroyli bezatilgan.",
+      "userId": 125,
+      "username": "bobur_t",
+      "userAvatar": "",
+      "commentDate": "2026-05-12T09:00:00.000Z",
+      "rating": 5,
+      "likesCount": 12,
+      "dislikesCount": 0
+    },
+    {
+      "id": 4,
+      "productId": 2,
+      "content": "Yetkazib berish kechikdi, lekin mahsulot yaxshi edi.",
+      "userId": 126,
+      "username": "malika_k",
+      "userAvatar": "",
+      "commentDate": "2026-05-07T16:45:00.000Z",
+      "rating": 3,
+      "likesCount": 2,
+      "dislikesCount": 2
+    },
+    {
+      "id": 5,
+      "productId": 3,
+      "content": "Do'stim tug'ilgan kuni uchun oldim, juda mamnun qoldi!",
+      "userId": 127,
+      "username": "jasur_99",
+      "userAvatar": "",
+      "commentDate": "2026-05-14T11:20:00.000Z",
+      "rating": 5,
+      "likesCount": 6,
+      "dislikesCount": 0
+    },
+    {
+      "id": 6,
+      "productId": 4,
+      "content": "Sifat yaxshi, yana buyurtma beraman.",
+      "userId": 128,
+      "username": "zulfiya_r",
+      "userAvatar": "",
+      "commentDate": "2026-05-09T13:00:00.000Z",
+      "rating": 4,
+      "likesCount": 4,
+      "dislikesCount": 0
+    },
+    {
+      "id": 7,
+      "productId": 11,
+      "content": "Very good, just amazing thank you",
+      "userId": 123,
+      "username": "current_user",
+      "userAvatar": "",
+      "commentDate": "2026-05-17T10:20:11.306Z",
+      "rating": 5,
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": 8,
+      "productId": 14,
+      "content": "thats another review for cupcake  product",
+      "userId": 123,
+      "username": "current_user",
+      "userAvatar": "",
+      "commentDate": "2026-05-17T10:20:43.213Z",
+      "rating": 5,
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": 9,
+      "productId": 17,
+      "content": "Very good thanks",
+      "userId": 123,
+      "username": "current_user",
+      "userAvatar": "",
+      "commentDate": "2026-05-17T12:08:17.006Z",
+      "rating": 5,
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": 10,
+      "productId": 16,
+      "content": "Test 123",
+      "userId": 123,
+      "username": "current_user",
+      "userAvatar": "",
+      "commentDate": "2026-05-17T12:08:26.713Z",
+      "rating": 5,
+      "likesCount": 0,
+      "dislikesCount": 0
+    }
+  ]
+}
