@@ -1,4 +1,6 @@
-const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5173";
+// Default to same-origin so requests hit the MSW handlers (baseUrl "/api/v1")
+// wherever the app is deployed, not the developer's localhost.
+const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "";
 
 type RequestOptions = {
   method?: string;

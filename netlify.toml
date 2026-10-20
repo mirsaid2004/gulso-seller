@@ -1,4 +1,8 @@
+[build.environment]
+  # No real backend yet: serve the API from MSW static mocks (see .env.example)
+  VITE_API_MOCKING = "enabled"
+
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/index.html"
   status = 200
