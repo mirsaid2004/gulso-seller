@@ -1,6 +1,9 @@
-// Default to same-origin so requests hit the MSW handlers (baseUrl "/api/v1")
-// wherever the app is deployed, not the developer's localhost.
-const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "";
+// With mocking on, always use same-origin so requests hit the MSW handlers
+// (baseUrl "/api/v1") wherever the app is deployed, ignoring any backend origin.
+const BASE_URL =
+  import.meta.env.VITE_API_MOCKING === "enabled"
+    ? ""
+    : (import.meta.env.VITE_API_BASE_URL ?? "");
 
 type RequestOptions = {
   method?: string;
