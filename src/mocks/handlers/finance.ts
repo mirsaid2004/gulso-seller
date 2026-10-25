@@ -1,6 +1,6 @@
 import { http, HttpResponse } from "msw"
 import { baseUrl } from "../instance"
-import { db } from "../db"
+import { ordersForRequest } from "./utils"
 import type { OrderResponse, FinanceTransaction, FinanceStats } from "@/types"
 
 const COMMISSION_RATE = 0.1
@@ -19,10 +19,10 @@ function orderToTransaction(order: OrderResponse): FinanceTransaction {
 }
 
 export const financeHandlers = [
-  http.get(`${baseUrl}/finance/stats`, () => {
+  http.get(`${baseUrl}/finance/stats`, ({ request }) => {
     const since = new Date()
     since.setDate(since.getDate() - 30)
-    const recent = db.orders.filter((o) => new Date(o.createdAt) >= since)
+    const recent = ordersForRequest(request).filter((o) => new Date(o.createdAt) >= since)
 
     const totalRevenue = recent.reduce((sum, o) => sum + o.totalAmount, 0)
     const commissionAmount = Math.round(totalRevenue * COMMISSION_RATE)
@@ -44,7 +44,7 @@ export const financeHandlers = [
     const search = url.searchParams.get("search")?.toLowerCase().trim() ?? ""
     const status = url.searchParams.get("status") ?? ""
 
-    const orders = [...db.orders].sort(
+    const orders = [...ordersForRequest(request)].sort(
       (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     )
 

@@ -46,9 +46,18 @@
     },
     "howItWorks": {
       "title": "Qanday boshlash kerak?",
-      "step1": { "title": "Ro'yxatdan o'ting", "desc": "Shaxsiy ma'lumotlaringiz va do'koningiz nomini kiriting. Ariza topshirish atigi 5 daqiqa vaqt oladi." },
-      "step2": { "title": "Mahsulotlarni yuklang", "desc": "Tavsiflar va yuqori sifatli fotosuratlar yordamida mahsulot kartochkalarini yarating." },
-      "step3": { "title": "Sotuvni boshlang", "desc": "Buyurtmalarni qabul qiling va foyda oling. Biz har bir qadamda sizga yordam beramiz." }
+      "step1": {
+        "title": "Ro'yxatdan o'ting",
+        "desc": "Shaxsiy ma'lumotlaringiz va do'koningiz nomini kiriting. Ariza topshirish atigi 5 daqiqa vaqt oladi."
+      },
+      "step2": {
+        "title": "Mahsulotlarni yuklang",
+        "desc": "Tavsiflar va yuqori sifatli fotosuratlar yordamida mahsulot kartochkalarini yarating."
+      },
+      "step3": {
+        "title": "Sotuvni boshlang",
+        "desc": "Buyurtmalarni qabul qiling va foyda oling. Biz har bir qadamda sizga yordam beramiz."
+      }
     },
     "stats": {
       "sellers": "Faol sotuvchilar",
@@ -267,6 +276,151 @@
       "notifications": "Bildirishnomalar",
       "security": "Xavfsizlik",
       "integrations": "Integratsiyalar"
+    }
+  },
+  "shops": {
+    "categories": {
+      "FLOWERS": "Gullar",
+      "GIFTS": "Sovg'alar",
+      "BAKERY": "Pishiriqlar"
+    },
+    "status": {
+      "PENDING": "KO'RIB CHIQILMOQDA",
+      "CHANGES_REQUESTED": "TUZATISH KERAK",
+      "APPROVED": "TASDIQLANDI",
+      "REJECTED": "RAD ETILDI"
+    },
+    "legalEntity": {
+      "YATT": "Yakka tartibdagi tadbirkor (YaTT)",
+      "LLC": "MChJ"
+    },
+    "legalEntityShort": {
+      "YATT": "YaTT",
+      "LLC": "MChJ"
+    },
+    "documents": {
+      "REGISTRATION_CERTIFICATE": "Ro'yxatdan o'tish guvohnomasi",
+      "OWNER_ID": "Egasining pasporti / ID"
+    },
+    "switcher": {
+      "label": "Do'konni almashtirish",
+      "noShop": "Hali do'kon yo'q",
+      "yourShops": "Do'konlaringiz",
+      "addShop": "Do'kon qo'shish",
+      "addShopHint": "Gulso tasdiqlagach ochiladi"
+    },
+    "form": {
+      "title": "Yangi do'kon qo'shish",
+      "updateTitle": "Arizani yangilash",
+      "subtitle": "Har bir yangi do'konni Gulso moderatorlari ko'rib chiqadi. Tasdiqlangach, u hisobingizda ochiladi.",
+      "steps": {
+        "1": "Do'kon",
+        "2": "Aloqa va yuridik",
+        "3": "Hujjatlar"
+      },
+      "continue": "Davom etish",
+      "send": "Ko'rib chiqishga yuborish",
+      "resubmit": "Qayta yuborish",
+      "submitFailed": "Arizani yuborib bo'lmadi",
+      "whatDoYouSell": "Nima sotasiz?",
+      "shopDetails": "Do'kon ma'lumotlari",
+      "logo": "Do'kon logotipi",
+      "namePlaceholder": "Do'kon nomi",
+      "descriptionPlaceholder": "Xaridorlar ko'radigan qisqa tavsif",
+      "contact": "Aloqa",
+      "phone": "Do'kon telefoni",
+      "emailPlaceholder": "Email (ixtiyoriy)",
+      "pickupAddress": "Olib ketish manzili",
+      "addressPlaceholder": "Shahar, tuman, ko'cha, uy",
+      "legalEntity": "Yuridik shakl",
+      "stirPlaceholder": "STIR — 9 ta raqam",
+      "documents": "Hujjatlar",
+      "uploaded": "{{name}} · {{size}}",
+      "uploadHint": "PDF yoki rasm, 10 MB gacha",
+      "agree": "Ma'lumotlar to'g'riligini tasdiqlayman va Gulso sotuvchi foydalanish shartlarini qabul qilaman.",
+      "review": {
+        "title": "Tekshirish",
+        "shop": "Do'kon"
+      },
+      "map": {
+        "title": "Olib ketish nuqtasi",
+        "hint": "Kuryerlar buyurtmani oladigan joyni belgilash uchun xaritani bosing.",
+        "confirm": "Shu joyni tanlash",
+        "pick": "Xaritada",
+        "pinned": "Belgilandi"
+      },
+      "upload": {
+        "tooLarge": "Fayl 10 MB dan katta",
+        "badType": "PDF yoki rasm yuklang"
+      },
+      "errors": {
+        "categories": "Kamida bitta toifani tanlang",
+        "name": "Do'kon nomini kiriting",
+        "phone": "Do'kon telefonini kiriting",
+        "address": "Manzilni kiriting",
+        "stir": "STIR 9 ta raqamdan iborat bo'lishi kerak",
+        "documents": "Ikkala hujjatni yuklang",
+        "agree": "Shartlarni qabul qiling"
+      }
+    },
+    "done": {
+      "title": "Ariza yuborildi",
+      "body": "Gulso moderatorlari tomonidan ko'rib chiqilmoqda — odatda 24 soat ichida. Natijani shu yerda va SMS orqali bildiramiz.",
+      "backTo": "{{name}} ga qaytish",
+      "view": "Arizani ko'rish"
+    },
+    "toast": {
+      "welcome": "{{name}} ga xush kelibsiz",
+      "welcomeBody": "Yangi do'koningizga o'tdingiz.",
+      "approved": "{{name}} tasdiqlandi",
+      "approvedBody": "Yangi do'koningiz ochishga tayyor.",
+      "changesRequested": "Tuzatish so'raldi",
+      "changesRequestedBody": "Gulso {{name}} uchun izoh qoldirdi."
+    },
+    "timeline": {
+      "submitted": "Ariza yuborildi",
+      "inReview": "Gulso moderatorlari ko'rib chiqmoqda",
+      "inReviewBody": "Jarayonda · odatda 24 soat ichida",
+      "CHANGES_REQUESTED": "Tuzatish so'raldi",
+      "CHANGES_REQUESTED_BODY": "Arizani tuzatib, qayta yuboring",
+      "REJECTED": "Ariza rad etildi",
+      "REJECTED_BODY": "Batafsil ma'lumot uchun Gulso yordam xizmatiga murojaat qiling",
+      "reviewed": "Gulso moderatorlari ko'rib chiqdi",
+      "reviewedBody": "Hammasi joyida",
+      "live": "Do'kon ochildi",
+      "liveBody": "Panelni oching va birinchi mahsulotlarni qo'shing",
+      "opens": "Do'kon hisobingizda ochiladi",
+      "opensBody": "Buyurtmalar, mahsulotlar va moliya mavjud bo'ladi"
+    },
+    "details": {
+      "categories": "Toifalar",
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Manzil",
+      "legalEntity": "Yuridik shakl",
+      "stir": "STIR",
+      "documents": "Hujjatlar",
+      "files_one": "{{count}} ta fayl",
+      "files_other": "{{count}} ta fayl"
+    },
+    "application": {
+      "subtitle": "Ariza #A-{{id}} · {{date}} da yuborilgan",
+      "progress": "Tasdiqlash jarayoni",
+      "noteTitle": "Gulso moderatorlari izohi",
+      "fixAndResubmit": "Tuzatib, qayta yuborish",
+      "openDashboard": "Do'kon panelini ochish",
+      "submittedDetails": "Yuborilgan ma'lumotlar"
+    },
+    "mock": {
+      "label": "Faqat mock API",
+      "hint": "Moderator qarorini sinab ko'rish",
+      "requestChanges": "Tuzatish so'rash",
+      "approve": "Tasdiqlash",
+      "sampleNote": "Formadagi STIR guvohnomadagi bilan mos emas. Iltimos, qayta tekshiring."
+    },
+    "empty": {
+      "title": "Sizda hali do'kon yo'q",
+      "body": "Birinchi do'koningizni qo'shing. Gulso moderatorlari tasdiqlagach, u shu yerda ochiladi."
     }
   }
 }

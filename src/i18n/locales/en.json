@@ -46,9 +46,18 @@
     },
     "howItWorks": {
       "title": "How to get started?",
-      "step1": { "title": "Register", "desc": "Enter your personal details and shop name. Applying takes just 5 minutes." },
-      "step2": { "title": "Upload products", "desc": "Create product listings with descriptions and high-quality photos." },
-      "step3": { "title": "Start selling", "desc": "Accept orders and earn revenue. We support you every step of the way." }
+      "step1": {
+        "title": "Register",
+        "desc": "Enter your personal details and shop name. Applying takes just 5 minutes."
+      },
+      "step2": {
+        "title": "Upload products",
+        "desc": "Create product listings with descriptions and high-quality photos."
+      },
+      "step3": {
+        "title": "Start selling",
+        "desc": "Accept orders and earn revenue. We support you every step of the way."
+      }
     },
     "stats": {
       "sellers": "Active sellers",
@@ -267,6 +276,151 @@
       "notifications": "Notifications",
       "security": "Security",
       "integrations": "Integrations"
+    }
+  },
+  "shops": {
+    "categories": {
+      "FLOWERS": "Flowers",
+      "GIFTS": "Gifts",
+      "BAKERY": "Bakery"
+    },
+    "status": {
+      "PENDING": "UNDER REVIEW",
+      "CHANGES_REQUESTED": "NEEDS CHANGES",
+      "APPROVED": "APPROVED",
+      "REJECTED": "REJECTED"
+    },
+    "legalEntity": {
+      "YATT": "Sole proprietor (YaTT)",
+      "LLC": "LLC (MChJ)"
+    },
+    "legalEntityShort": {
+      "YATT": "YaTT",
+      "LLC": "LLC"
+    },
+    "documents": {
+      "REGISTRATION_CERTIFICATE": "Registration certificate",
+      "OWNER_ID": "Owner's passport / ID"
+    },
+    "switcher": {
+      "label": "Switch shop",
+      "noShop": "No shop yet",
+      "yourShops": "Your shops",
+      "addShop": "Add a shop",
+      "addShopHint": "Opens after Gulso approves it"
+    },
+    "form": {
+      "title": "Add a new shop",
+      "updateTitle": "Update application",
+      "subtitle": "Gulso maintainers review every new shop. It opens in your account once approved.",
+      "steps": {
+        "1": "Shop",
+        "2": "Contact & legal",
+        "3": "Documents"
+      },
+      "continue": "Continue",
+      "send": "Send for review",
+      "resubmit": "Resubmit",
+      "submitFailed": "Couldn't send the application",
+      "whatDoYouSell": "What do you sell?",
+      "shopDetails": "Shop details",
+      "logo": "Shop logo",
+      "namePlaceholder": "Shop name",
+      "descriptionPlaceholder": "Short description customers will see",
+      "contact": "Contact",
+      "phone": "Shop phone",
+      "emailPlaceholder": "Email (optional)",
+      "pickupAddress": "Pickup address",
+      "addressPlaceholder": "City, district, street, building",
+      "legalEntity": "Legal entity",
+      "stirPlaceholder": "STIR / TIN — 9 digits",
+      "documents": "Documents",
+      "uploaded": "{{name}} · {{size}}",
+      "uploadHint": "PDF or photo, up to 10 MB",
+      "agree": "I confirm the details are correct and accept the Gulso seller terms of use.",
+      "review": {
+        "title": "Review",
+        "shop": "Shop"
+      },
+      "map": {
+        "title": "Pickup location",
+        "hint": "Click the map to drop a pin where couriers pick up orders.",
+        "confirm": "Use this location",
+        "pick": "Pick on map",
+        "pinned": "Pinned"
+      },
+      "upload": {
+        "tooLarge": "File is larger than 10 MB",
+        "badType": "Upload a PDF or an image"
+      },
+      "errors": {
+        "categories": "Pick at least one category",
+        "name": "Shop name is required",
+        "phone": "Enter the shop's phone number",
+        "address": "Address is required",
+        "stir": "STIR must be 9 digits",
+        "documents": "Upload both documents",
+        "agree": "Please accept the terms"
+      }
+    },
+    "done": {
+      "title": "Application sent",
+      "body": "is now waiting for review by Gulso maintainers — usually within 24 hours. We'll notify you here and by SMS.",
+      "backTo": "Back to {{name}}",
+      "view": "View application"
+    },
+    "toast": {
+      "welcome": "Welcome to {{name}}",
+      "welcomeBody": "Switched to your new shop.",
+      "approved": "{{name}} was approved",
+      "approvedBody": "Your new shop is ready to open.",
+      "changesRequested": "Changes requested",
+      "changesRequestedBody": "Gulso left a note on {{name}}."
+    },
+    "timeline": {
+      "submitted": "Application submitted",
+      "inReview": "Review by Gulso maintainers",
+      "inReviewBody": "In progress · usually within 24 hours",
+      "CHANGES_REQUESTED": "Changes requested",
+      "CHANGES_REQUESTED_BODY": "Update your application and send it again",
+      "REJECTED": "Application rejected",
+      "REJECTED_BODY": "Contact Gulso support for details",
+      "reviewed": "Reviewed by Gulso maintainers",
+      "reviewedBody": "Everything checks out",
+      "live": "Shop is live",
+      "liveBody": "Open the dashboard and add your first products",
+      "opens": "Shop opens in your account",
+      "opensBody": "Orders, products and finance become available"
+    },
+    "details": {
+      "categories": "Categories",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "legalEntity": "Legal entity",
+      "stir": "STIR",
+      "documents": "Documents",
+      "files_one": "{{count}} file",
+      "files_other": "{{count}} files"
+    },
+    "application": {
+      "subtitle": "Application #A-{{id}} · submitted {{date}}",
+      "progress": "Approval progress",
+      "noteTitle": "Note from Gulso maintainers",
+      "fixAndResubmit": "Fix & resubmit",
+      "openDashboard": "Open shop dashboard",
+      "submittedDetails": "Submitted details"
+    },
+    "mock": {
+      "label": "Mock API only",
+      "hint": "Simulate the maintainer's decision",
+      "requestChanges": "Request changes",
+      "approve": "Approve",
+      "sampleNote": "The STIR in the form doesn't match the certificate. Please re-check it."
+    },
+    "empty": {
+      "title": "You don't have a shop yet",
+      "body": "Add your first shop. Gulso maintainers review it, and it opens here once approved."
     }
   }
 }
