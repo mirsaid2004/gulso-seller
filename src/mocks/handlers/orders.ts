@@ -1,6 +1,7 @@
 import { http, HttpResponse } from "msw"
 import { baseUrl } from "../instance"
 import { db, nextId, type DbNotification } from "../db"
+import { ordersForRequest } from "./utils"
 import type { OrderStatus } from "@/types"
 
 function pushNotification(notification: Omit<DbNotification, "id" | "isRead" | "createdAt">) {
@@ -20,7 +21,7 @@ export const orderHandlers = [
     const search = url.searchParams.get("search")?.toLowerCase().trim() ?? ""
 
     // newest first
-    let orders = [...db.orders].sort(
+    let orders = [...ordersForRequest(request)].sort(
       (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     )
 

@@ -33,11 +33,23 @@ function getAccessToken(): string | null {
   }
 }
 
+// Shop the seller is working in; the backend scopes products, orders and finance by it.
+function getActiveShopId(): string | null {
+  try {
+    const raw = localStorage.getItem("active-shop");
+    const id = raw ? JSON.parse(raw)?.state?.activeShopId : null;
+    return id == null ? null : String(id);
+  } catch {
+    return null;
+  }
+}
+
 async function fetchApi<T>(path: string, options: RequestOptions = {}): Promise<T> {
   const { method = "GET", headers = {}, body, params, _retry = false } = options;
 
   const isAuth = path.startsWith("/auth/");
   const token = isAuth ? null : getAccessToken();
+  const shopId = isAuth ? null : getActiveShopId();
 
   const res = await fetch(buildUrl(path, params), {
     method,
@@ -45,6 +57,7 @@ async function fetchApi<T>(path: string, options: RequestOptions = {}): Promise<
       "Content-Type": "application/json",
       Accept: "application/json",
       ...(!isAuth && token ? { Authorization: `Bearer ${token}` } : {}),
+      ...(shopId ? { "X-Shop-Id": shopId } : {}),
       ...headers,
     },
     body: body !== undefined ? JSON.stringify(body) : undefined,

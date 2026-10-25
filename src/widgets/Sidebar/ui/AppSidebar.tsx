@@ -1,7 +1,11 @@
-import { Package, ReceiptText, ShoppingCart, Settings, LogOut } from "lucide-react"
+import { Package, ReceiptText, ShoppingCart, Settings } from "lucide-react"
 import { useLocation, useNavigate, Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { useQueryClient } from "@tanstack/react-query"
 import { useAuthStore } from "@/features/auth/useAuthStore"
+import { ShopSwitcher } from "@/features/shop-switcher"
+import { useCreateShopDialog } from "@/features/create-shop"
+import { useActiveShopStore } from "@/entities/shop"
 import { api } from "@/lib/api-client"
 import {
     Sidebar,
@@ -14,7 +18,7 @@ import {
     SidebarMenuItem,
     SidebarFooter,
 } from "@/shared/ui/sidebar"
-import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar"
+import { cn } from "@/shared/lib/utils"
 
 const NAV_ITEMS = [
     { key: "orders",    url: "/orders",    icon: ShoppingCart },
@@ -24,15 +28,24 @@ const NAV_ITEMS = [
 ] as const
 
 
-export function AppSidebar() {
+interface AppSidebarProps {
+    /** Dims the navigation while the active shop is still an application. */
+    navDisabled?: boolean
+}
+
+export function AppSidebar({ navDisabled = false }: AppSidebarProps) {
     const location = useLocation()
     const navigate = useNavigate()
     const { t } = useTranslation()
-    const { name, userId, clearAuth } = useAuthStore()
+    const queryClient = useQueryClient()
+    const clearAuth = useAuthStore((s) => s.clearAuth)
+    const openCreateShop = useCreateShopDialog((s) => s.openCreate)
 
     const handleLogout = async () => {
         try { await api.post("/auth/logout"); } catch { /* ignore */ }
         clearAuth()
+        useActiveShopStore.getState().setActiveShopId(null)
+        queryClient.clear()
         navigate("/login", { replace: true })
     }
 
@@ -51,9 +64,12 @@ export function AppSidebar() {
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupContent>
-                        <SidebarMenu className="gap-2 px-2">
+                        <SidebarMenu
+                            aria-disabled={navDisabled || undefined}
+                            className={cn("gap-2 px-2 transition-opacity", navDisabled && "opacity-40 pointer-events-none")}
+                        >
                             {NAV_ITEMS.map((item) => {
-                                const isActive = location.pathname === item.url
+                                const isActive = !navDisabled && location.pathname === item.url
                                 const label = t(`sidebar.nav.${item.key}`)
                                 return (
                                     <SidebarMenuItem key={item.key}>
@@ -65,7 +81,7 @@ export function AppSidebar() {
                                                 : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                                             }`}
                                         >
-                                            <Link to={item.url} className="flex items-center gap-4 px-4">
+                                            <Link to={item.url} tabIndex={navDisabled ? -1 : undefined} className="flex items-center gap-4 px-4">
                                                 <item.icon className={`h-5 w-5 ${isActive ? "text-primary" : "text-slate-400"}`} />
                                                 <span className="text-sm">{label}</span>
                                             </Link>
@@ -78,27 +94,8 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
 
-            <SidebarFooter className="p-4 border-t border-slate-50 mt-auto">
-                {/* User row */}
-                <div className="flex items-center justify-between gap-3 p-3 rounded-2xl hover:bg-slate-50 transition-colors group cursor-pointer">
-                    <div className="flex items-center gap-3">
-                        <Avatar className="w-9 h-9 rounded-xl border-2 border-white shadow-sm">
-                            <AvatarImage src="https://github.com/shadcn.png" />
-                            <AvatarFallback>AD</AvatarFallback>
-                        </Avatar>
-                        <div className="flex flex-col">
-                            <span className="text-xs font-black text-slate-900">{name ?? "User"}</span>
-                            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{t("common.id")}: {userId ?? "—"}</span>
-                        </div>
-                    </div>
-                    <button
-                        onClick={handleLogout}
-                        className="p-2 rounded-lg text-slate-400 hover:text-rose-500 hover:bg-rose-50 transition-all active:scale-95"
-                        title={t("sidebar.logout")}
-                    >
-                        <LogOut className="w-4 h-4" />
-                    </button>
-                </div>
+            <SidebarFooter className="p-4 border-t border-slate-50 mt-auto group-data-[collapsible=icon]:p-2">
+                <ShopSwitcher onAddShop={openCreateShop} onLogout={handleLogout} />
             </SidebarFooter>
         </Sidebar>
     )

@@ -1,6 +1,7 @@
 import { http, HttpResponse } from "msw"
 import { baseUrl } from "../instance"
 import { db, nextId, type DbProduct } from "../db"
+import { requestShopId } from "./utils"
 import type { ProductDetailedResponse, CreateProductRequest, Lang } from "@/types"
 
 // ── helpers ──────────────────────────────────────────────────────────────────
@@ -50,7 +51,7 @@ function dbToAdmin(p: DbProduct, lang: Lang): ProductDetailedResponse {
   }
 }
 
-function adminToDb(data: CreateProductRequest): Omit<DbProduct, "id"> {
+function adminToDb(data: CreateProductRequest, companyId: number): Omit<DbProduct, "id"> {
   return {
     name: {
       az: data.translations.uz.name,
@@ -63,7 +64,7 @@ function adminToDb(data: CreateProductRequest): Omit<DbProduct, "id"> {
     reviewCount: 0,
     imageUrl: data.imageUrls?.[0] ?? "",
     stockQuantity: data.stockQuantity,
-    companyId: 1,
+    companyId,
     isNew: true,
     isBestSeller: false,
     category: data.category,
@@ -110,6 +111,11 @@ export const productHandlers = [
     // newest first
     let products = [...db.products].sort((a, b) => b.id - a.id)
 
+    const shopId = requestShopId(request)
+    if (shopId !== null) {
+      products = products.filter((p) => p.companyId === shopId)
+    }
+
     // filter
     if (search) {
       products = products.filter((p) => {
@@ -145,7 +151,7 @@ export const productHandlers = [
   // POST /api/v1/products
   http.post(`${baseUrl}/products`, async ({ request }) => {
     const body = (await request.json()) as CreateProductRequest
-    const created: DbProduct = { id: nextId(db.products), ...adminToDb(body) }
+    const created: DbProduct = { id: nextId(db.products), ...adminToDb(body, requestShopId(request) ?? 1) }
     db.products.push(created)
 
     return HttpResponse.json(

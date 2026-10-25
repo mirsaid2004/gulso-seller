@@ -1,5 +1,6 @@
 import seed from "./data/db.json"
 import type { OrderResponse } from "@/types"
+import { shopsSeed, type DbShop } from "./data/shops"
 
 // ── db.json shapes ──────────────────────────────────────────────────────────
 export interface DbTranslations {
@@ -46,12 +47,29 @@ export interface DbNotification {
   createdAt: string
 }
 
-// In-memory copy of the static seed. Mutations live until the page reloads.
-export const db = structuredClone(seed) as unknown as {
+export type { DbShop }
+
+interface Db {
   products: DbProduct[]
   companies: DbCompany[]
   orders: OrderResponse[]
   notifications: DbNotification[]
+  shops: DbShop[]
+}
+
+function freshDb(): Db {
+  return {
+    ...(structuredClone(seed) as unknown as Omit<Db, "shops">),
+    shops: structuredClone(shopsSeed),
+  }
+}
+
+// In-memory copy of the static seed. Mutations live until the page reloads.
+export const db: Db = freshDb()
+
+/** Restores the seed; tests call this between cases. */
+export function resetDb() {
+  Object.assign(db, freshDb())
 }
 
 export function nextId(items: { id: number }[]): number {

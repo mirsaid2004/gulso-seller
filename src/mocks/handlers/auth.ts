@@ -38,9 +38,9 @@ export const authHandlers = [
           refreshToken: "mock-admin-refresh-token",
           tokenType: "Bearer",
           expiresIn: 3600,
-          userId: 1,
-          name: "Admin",
-          roles: [Role.ADMIN],
+          userId: 123,
+          name: "Mirsaid",
+          roles: [Role.SELLER],
         },
       });
     }

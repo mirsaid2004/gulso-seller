@@ -7,6 +7,7 @@ interface AuthState {
   refreshToken: string | null;
   userId: number | null;
   name: string | null;
+  phone: string | null;
   roles: Role[];
   isAuthenticated: boolean;
   setAuth: (data: {
@@ -14,6 +15,7 @@ interface AuthState {
     refreshToken: string;
     userId: number;
     name: string;
+    phone?: string | null;
     roles: Role[];
   }) => void;
   clearAuth: () => void;
@@ -26,11 +28,12 @@ export const useAuthStore = create<AuthState>()(
       refreshToken: null,
       userId: null,
       name: null,
+      phone: null,
       roles: [],
       isAuthenticated: false,
 
-      setAuth: ({ accessToken, refreshToken, userId, name, roles }) =>
-        set({ accessToken, refreshToken, userId, name, roles, isAuthenticated: true }),
+      setAuth: ({ accessToken, refreshToken, userId, name, phone = null, roles }) =>
+        set({ accessToken, refreshToken, userId, name, phone, roles, isAuthenticated: true }),
 
       clearAuth: () =>
         set({
@@ -38,6 +41,7 @@ export const useAuthStore = create<AuthState>()(
           refreshToken: null,
           userId: null,
           name: null,
+          phone: null,
           roles: [],
           isAuthenticated: false,
         }),

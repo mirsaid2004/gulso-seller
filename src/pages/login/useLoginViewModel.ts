@@ -2,27 +2,12 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { authApi } from "@/api/auth.api";
 import { useAuthStore } from "@/features/auth/useAuthStore";
+import { formatPhone, isPhoneValid } from "@/shared/lib/phone";
 
 type Step = "phone" | "otp";
 
 const OTP_LENGTH = 6;
 const TIMER_DURATION = 59;
-
-function formatPhone(raw: string): string {
-  const digits = raw.replace(/\D/g, "").substring(0, 9);
-  const p1 = digits.substring(0, 2);
-  const p2 = digits.substring(2, 5);
-  const p3 = digits.substring(5, 7);
-  const p4 = digits.substring(7, 9);
-  if (digits.length > 7) return `${p1} ${p2} ${p3} ${p4}`;
-  if (digits.length > 5) return `${p1} ${p2} ${p3}`;
-  if (digits.length > 2) return `${p1} ${p2}`;
-  return p1;
-}
-
-function isPhoneValid(phone: string): boolean {
-  return /^\d{2} \d{3} \d{2} \d{2}$/.test(phone);
-}
 
 export function useLoginViewModel() {
   const navigate = useNavigate();
@@ -122,7 +107,7 @@ export function useLoginViewModel() {
     setVerifying(true);
     try {
       const res = await authApi.verifyOtp(`+998${phone.replace(/\s/g, "")}`, code);
-      setAuth(res.data);
+      setAuth({ ...res.data, phone: `+998${phone.replace(/\s/g, "")}` });
       navigate("/products", { replace: true });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Noto'g'ri kod");
